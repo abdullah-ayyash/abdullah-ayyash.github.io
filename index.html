@@ -1,9 +1,87 @@
-<html>
- 
-<body>
-  <h1>Abdullah Ayyash</h1>
-  <p>Welcome to my website!</p>
-  <img src="https://content.codecademy.com/articles/github-pages-via-web-app/happy-ice-cream.gif" />
-</body>
- 
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <link href="styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <video autoplay muted loop id="myVideo">
+      <source src="Clouds.mp4" type="video/mp4" />
+    </video>
+    <div id="my-content">
+      <header>
+        <h1>The CSS <span>object-fit</span> Property</h1>
+        <h3>The object-fit CSS property sets how the content of a replaced element, such as an &lt;img&gt; or &lt;video&gt;, should be resized to fit its container.</h3>
+      </header>
+      <main>
+        <table>
+          <thead>
+            <tr>
+              <th>Values</th>
+              <th>Description</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td class="center">fill</td>
+              <td>
+                This is default. The image is resized to fill the given
+                dimension. If necessary, the image will be stretched or squished
+                to fit
+              </td>
+            </tr>
+            <tr>
+              <td class="center">contain</td>
+              <td>
+                The image keeps its aspect ratio, but is resized to fit within
+                the given dimension
+              </td>
+            </tr>
+            <tr>
+              <td class="center">cover</td>
+              <td>
+                The image keeps its aspect ratio and fills the given dimension.
+                The image will be clipped to fit
+              </td>
+            </tr>
+            <tr>
+              <td class="center">none</td>
+              <td>The image is not resized</td>
+            </tr>
+            <tr>
+              <td class="center">scale-down</td>
+              <td>
+                the image is scaled down to the smallest version of none or
+                contain
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <section>
+          <h2 id="title">Live Testing</h2>
+          <article id="test-list">
+            <ul>
+              <li id="fill-li">Fill</li>
+              <li id="contain-li">Contain</li>
+              <li id="cover-li">Cover</li>
+              <li id="none-li">None</li>
+              <li id="scale-down-li">Scale-down</li>
+            </ul>
+          </article>
+          <article id="img-article">
+            <div id="image-bg"></div>
+            <img src="bosra.jpg" id="img-preview">
+            
+          </article>
+        </section>
+      </main>
+      <footer>
+        <p>Developed By Abdullah Ayyash © 2023</p>
+    </footer>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
 </html>

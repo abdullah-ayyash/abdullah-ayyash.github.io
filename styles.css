@@ -9,7 +9,10 @@
   z-index: 0;
 }
 #my-content{
-  position: relative;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
 }
 body{
   margin: 0;
@@ -154,6 +157,10 @@ footer{
     height: 20px;
     background-color: #16232E;
     padding: 15px 0;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
 }
 footer p{
     text-align: center;

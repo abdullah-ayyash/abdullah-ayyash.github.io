@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
 
+
 #myVideo{
   position: fixed;
   top: 0;
@@ -18,9 +19,6 @@ body{
   margin: 0;
   font-family: Arial;
 
-}
-main{
-    height: 900px;
 }
 
 
@@ -147,9 +145,6 @@ li:hover{
     display: block;
     margin: 0 auto;
     border-radius: 5%;
-    z-index: 5;
-    position: relative;
-    top: 10px;
     object-fit: fill;
 }
 
@@ -157,10 +152,6 @@ footer{
     height: 20px;
     background-color: #16232E;
     padding: 15px 0;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
 }
 footer p{
     text-align: center;
@@ -174,4 +165,10 @@ header h3{
     background-color: beige;
     padding: 10px 0;
     font-family: 'Open Sans', sans-serif;
+}
+
+.clearfix:after{
+  content: "";
+  display: table;
+  clear: both;
 }

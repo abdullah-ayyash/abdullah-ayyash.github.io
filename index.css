@@ -345,6 +345,12 @@ main form div button:hover{
 
 }
 
+@media only screen and (max-width: 1200px){
+    main #projects article{
+        width: 30%;;
+    }
+}
+
 @media only screen and (max-width: 1024px){
     main #about h2{
         font-size: 3rem;
@@ -355,9 +361,6 @@ main form div button:hover{
     main #projects{
         row-gap: 0.5rem;
         column-gap: 0.5rem;
-    }
-    main #projects article{
-        width: 30%;;
     }
 
 }

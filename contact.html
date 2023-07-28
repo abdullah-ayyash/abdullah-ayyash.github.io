@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="index.css" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="./images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon-16x16.png">
+    <link rel="manifest" href="./images/site.webmanifest">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <title>Abdullah Ayyash</title>
+</head>
+<body>
+    <header>
+        <h1><a href="/" rel="home"><img id="logo-img" src="./images/logo.png" alt="Abdullah Ayyash"></a></h1>
+        <nav>
+            <ul>
+                <li class="list-items"><a href="/">About</a></li>
+                <li class="list-items"><a href="/#projects">Projects</a></li>
+                <li class="list-items"><a href="/contact.html">Contact</a></li>
+                <li class="list-items"><a href="#">Skills</a></li>
+                <li id="resume" class="list-items"><a href="https://drive.google.com/uc?export=download&id=11PJZdVxPxraTDRwcPXtCoCtssnv_0xYo">Resume</a></li>
+            </ul>
+            
+        </nav>
+
+    </header>
+
+    <section id="contact-section">
+
+        <main>
+            <h1 id="contact-h1">Let's Build Something Great Together!</h1>
+            <h2>Contact us and let's make your web dreams a reality.</h2>
+            <form>
+                <div>
+                    <label for="first-name">First Name: </label>
+                    <br>
+                    <input type="text" id="first-name" name="fname" class="inputs-field" required>
+                </div>
+
+                <div>
+                    <label for="last-name">Last Name: </label>
+                    <br>
+                    <input type="text" id="last-name" name="lname" class="inputs-field" required>
+                </div>
+                <div>
+                    <label for="email">Email: </label>
+                    <br>
+                    <input type="email" id="email" name="email" class="inputs-field" required>
+                </div>
+
+                <div>
+                    <label for="message">Message</label>
+                    <br>
+                    <textarea id="message" rows="7" cols="40" class="inputs-field"></textarea>
+                </div>
+
+                <!-- <div>
+                    <button id="send-btn">Send Message</button>
+                </div> -->
+
+                <!-- <div>
+                    <label for="send-btn"></label>
+                    <input type="submit" id="send-btn" class="inputs-field">
+                </div> -->
+
+                <div>
+                    <a id="send-btn" style="cursor: pointer">Send Message</a>
+                </div>
+
+                <div>
+                    <h3 style="display:none" id="sucessMessage">Message was sent ✅, We'll be in touch shortly..</h3>
+                </div>
+
+            </form>
+
+        </main>
+        
+    </section>
+
+
+    <footer>
+        
+    </footer>
+    <script src="/index.js"></script>
+</body>
+</html>

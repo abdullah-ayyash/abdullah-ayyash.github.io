@@ -1,65 +1,123 @@
-const logoImg = document.getElementById('logo-img');
+// =====================
+// Mobile menu functionality
+// =====================
+const mobileMenuBtn = document.getElementById("mobileMenuBtn");
+const mobileMenu = document.getElementById("mobileMenu");
+const mobileLinks = document.querySelectorAll(".mobile-link");
 
-let menuAniTime = setInterval(menuAni,50);
-const listItems = document.getElementsByClassName('list-items');
-let count = -70;
-function menuAni(){
-    if(count < 0){
-        count +=6;
-        for(let i = 0; i < listItems.length; i++){
-            listItems[i].style.top = count + 'px'
-        }
+mobileMenuBtn.addEventListener("click", () => {
+  mobileMenu.classList.toggle("active");
+  const icon = mobileMenuBtn.querySelector("i");
+
+  if (mobileMenu.classList.contains("active")) {
+    icon.classList.remove("fa-bars");
+    icon.classList.add("fa-times");
+  } else {
+    icon.classList.remove("fa-times");
+    icon.classList.add("fa-bars");
+  }
+});
+
+// Close mobile menu when clicking on a link
+mobileLinks.forEach((link) => {
+  link.addEventListener("click", () => {
+    mobileMenu.classList.remove("active");
+    const icon = mobileMenuBtn.querySelector("i");
+    icon.classList.remove("fa-times");
+    icon.classList.add("fa-bars");
+  });
+});
+
+// Close mobile menu when clicking outside
+document.addEventListener("click", (e) => {
+  if (!mobileMenu.contains(e.target) && !mobileMenuBtn.contains(e.target)) {
+    mobileMenu.classList.remove("active");
+    const icon = mobileMenuBtn.querySelector("i");
+    icon.classList.remove("fa-times");
+    icon.classList.add("fa-bars");
+  }
+});
+
+// =====================
+// Contact form functionality (Formspree AJAX)
+// =====================
+const form = document.querySelector(".contact-form");
+const successMessage = document.getElementById("successMessage");
+
+form.addEventListener("submit", async (e) => {
+  e.preventDefault();
+
+  try {
+    const response = await fetch(form.action, {
+      method: "POST",
+      body: new FormData(form),
+      headers: { Accept: "application/json" },
+    });
+
+    if (response.ok) {
+      // Show success message
+      successMessage.style.display = "block";
+
+      // Reset form fields
+      form.reset();
+
+      // Scroll to success message
+      successMessage.scrollIntoView({ behavior: "smooth" });
+
+      // Hide message after 5 seconds
+      setTimeout(() => {
+        successMessage.style.display = "none";
+      }, 5000);
+    } else {
+      alert("Oops! There was a problem submitting your form.");
     }
-    else{
-        clearInterval(menuAniTime);
-    }
-}
+  } catch (error) {
+    alert("Network error. Please try again.");
+  }
+});
 
-let timeId3 = setInterval(rotateImg, 20);
+// Handle Enter key for form submission (except in textarea)
+form.addEventListener("keypress", (e) => {
+  if (e.key === "Enter" && e.target.tagName !== "TEXTAREA") {
+    e.preventDefault();
+    form.dispatchEvent(
+      new Event("submit", { cancelable: true, bubbles: true })
+    );
+  }
+});
 
-let deg = 0;
-function rotateImg() {
-    if (deg > 360) {
-        clearInterval(timeId3);
-    }
-    else {
-        logoImg.style.rotate = deg + "deg"
-        deg += 2;
-    }
+// =====================
+// Header scroll effect
+// =====================
+let lastScrollY = window.scrollY;
+const header = document.querySelector("header");
 
-}
+window.addEventListener("scroll", () => {
+  if (window.scrollY > lastScrollY && window.scrollY > 100) {
+    header.style.transform = "translateY(-100%)";
+  } else {
+    header.style.transform = "translateY(0)";
+  }
+  lastScrollY = window.scrollY;
+});
 
+// =====================
+// Add random delays to floating shapes
+// =====================
+document.querySelectorAll(".shape").forEach((shape) => {
+  shape.style.animationDelay = Math.random() * 20 + "s";
+  shape.style.animationDuration = 15 + Math.random() * 10 + "s";
+});
 
-// Only contact page
-let timeId4 = setInterval(contactStat, 150);
-let contactHeading = document.getElementById('contact-h1');
-let val = 0;
-function contactStat() {
-    if (val < 1) {
-        contactHeading.style.opacity = `${val}`
-        val += 0.1;
-    }
-    else {
+// =====================
+// Input focus effects
+// =====================
+document.querySelectorAll("input, textarea").forEach((input) => {
+  input.addEventListener("focus", () => {
+    input.parentElement.style.transform = "scale(1.02)";
+  });
 
-        clearInterval(timeId4);
-    }
-}
-
-
-const showSucess = () => {
-    const fnVal = document.getElementsByClassName('inputs-field')
-    if (fnVal[0].value) {
-        document.getElementById('sucessMessage').style.display = 'block';
-        scrollTo(0, document.body.scrollHeight);
-    }
-    fnVal[0].value = '';
-    fnVal[1].value = '';
-    fnVal[2].value = '';
-    fnVal[3].value = '';
-
-
-}
-
-
-const sendBtn = document.getElementById('send-btn');
-sendBtn.onclick = showSucess;
+  input.addEventListener("blur", () => {
+    input.parentElement.style.transform = "scale(1)";
+  });
+});

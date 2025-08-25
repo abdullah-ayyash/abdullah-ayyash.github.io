@@ -1,78 +1,123 @@
+// Mobile menu functionality
+const mobileMenuBtn = document.getElementById("mobileMenuBtn");
+const mobileMenu = document.getElementById("mobileMenu");
+const mobileLinks = document.querySelectorAll(".mobile-link");
 
-const myName = document.getElementById('my-name');
-const logoImg = document.getElementById('logo-img');
+mobileMenuBtn.addEventListener("click", () => {
+  mobileMenu.classList.toggle("active");
+  const icon = mobileMenuBtn.querySelector("i");
 
+  if (mobileMenu.classList.contains("active")) {
+    icon.classList.remove("fa-bars");
+    icon.classList.add("fa-times");
+  } else {
+    icon.classList.remove("fa-times");
+    icon.classList.add("fa-bars");
+  }
+});
 
+// Close mobile menu when clicking on a link
+mobileLinks.forEach((link) => {
+  link.addEventListener("click", () => {
+    mobileMenu.classList.remove("active");
+    const icon = mobileMenuBtn.querySelector("i");
+    icon.classList.remove("fa-times");
+    icon.classList.add("fa-bars");
+  });
+});
 
+// Close mobile menu when clicking outside
+document.addEventListener("click", (e) => {
+  if (!mobileMenu.contains(e.target) && !mobileMenuBtn.contains(e.target)) {
+    mobileMenu.classList.remove("active");
+    const icon = mobileMenuBtn.querySelector("i");
+    icon.classList.remove("fa-times");
+    icon.classList.add("fa-bars");
+  }
+});
 
+// Typing animation for name
+const myName = document.getElementById("my-name");
+const nameList = [
+  "A",
+  "b",
+  "d",
+  "u",
+  "l",
+  "l",
+  "a",
+  "h",
+  " ",
+  "A",
+  "y",
+  "y",
+  "a",
+  "s",
+  "h",
+];
 
-    // Get the first letter of the heading text
-    const nameList = ['A', 'b', 'd', 'u', 'l', 'l', 'a', 'h', ' ', 'A', 'y', 'y', 'a', 's', 'h']
+let timeId = setInterval(frame, 200);
+let index = 0;
 
-    let timeId = setInterval(frame, 200);
-    let index = 0;
+function frame() {
+  if (index < nameList.length) {
+    myName.textContent += nameList[index];
+    index++;
+  }
 
+  if (index === nameList.length) {
+    clearInterval(timeId);
+    // Remove the typing cursor class when animation is complete
+    myName.classList.remove("typing-cursor");
+  }
+}
 
-    function frame() {
-        if (index < nameList.length) {
-            myName.textContent += nameList[index];
-            index++;
-        }
+// Header scroll effect
+let lastScrollY = window.scrollY;
+const header = document.querySelector("header");
 
+window.addEventListener("scroll", () => {
+  if (window.scrollY > lastScrollY && window.scrollY > 100) {
+    header.style.transform = "translateY(-100%)";
+  } else {
+    header.style.transform = "translateY(0)";
+  }
+  lastScrollY = window.scrollY;
+});
 
-        if (index === nameList.length) {
-            clearInterval(timeId);
-            clearInterval(timeId2);
-            myName.style.borderRight = '';
-        }
-
+// Smooth scroll for navigation links
+document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+  anchor.addEventListener("click", function (e) {
+    e.preventDefault();
+    const target = document.querySelector(this.getAttribute("href"));
+    if (target) {
+      target.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      });
     }
+  });
+});
 
-    let timeId2 = setInterval(typingEff, 200);
+function generateFloatingShapes() {
+  const container = document.querySelector(".floating-shapes");
+  const numShapes = 30; // Increase this number as needed
 
-    function typingEff() {
-        let borderVal = myName.style.borderRight;
-        if (borderVal === '3px solid springgreen') {
-            myName.style.borderRight = '';
-        }
-        else {
-            myName.style.borderRight = '3px solid springgreen';
-        }
-    }
+  for (let i = 0; i < numShapes; i++) {
+    const size = Math.floor(Math.random() * 20) + 10; // 10px–30px
+    const left = Math.random() * 100; // % across the screen
+    const delay = Math.random() * 10; // 0–10s
 
+    const div = document.createElement("div");
+    div.className = "shape";
+    div.style.width = `${size}px`;
+    div.style.height = `${size}px`;
+    div.style.left = `${left}%`;
+    div.style.animationDelay = `${delay}s`;
+    div.style.animationDuration = `${15 + Math.random() * 10}s`;
 
+    container.appendChild(div);
+  }
+}
 
-
-
-
-
-    let menuAniTime = setInterval(menuAni,50);
-    const listItems = document.getElementsByClassName('list-items');
-    let count = -70;
-    function menuAni(){
-        if(count < 0){
-            count +=6;
-            for(let i = 0; i < listItems.length; i++){
-                listItems[i].style.top = count + 'px'
-            }
-        }
-        else{
-            clearInterval(menuAniTime);
-        }
-    }
-
-    let timeId3 = setInterval(rotateImg, 20);
-
-    let deg = 0;
-    function rotateImg() {
-        if (deg > 360) {
-            clearInterval(timeId3);
-        }
-        else {
-            logoImg.style.rotate = deg + "deg"
-            deg += 2;
-        }
-
-    }
-
-
+generateFloatingShapes();

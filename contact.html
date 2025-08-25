@@ -1,94 +1,200 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="index.css" rel="stylesheet">
-    <link rel="apple-touch-icon" sizes="180x180" href="./images/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon-16x16.png">
-    <link rel="manifest" href="./images/site.webmanifest">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact - Abdullah Ayyash</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./contact.css" />
+  </head>
+  <body>
+    <!-- Background Animation -->
+    <div class="bg-animation"></div>
+    <div class="floating-shapes">
+      <div
+        class="shape"
+        style="width: 20px; height: 20px; left: 10%; animation-delay: 0s"
+      ></div>
+      <div
+        class="shape"
+        style="width: 15px; height: 15px; left: 20%; animation-delay: 5s"
+      ></div>
+      <div
+        class="shape"
+        style="width: 25px; height: 25px; left: 30%; animation-delay: 10s"
+      ></div>
+      <div
+        class="shape"
+        style="width: 18px; height: 18px; left: 40%; animation-delay: 15s"
+      ></div>
+      <div
+        class="shape"
+        style="width: 22px; height: 22px; left: 50%; animation-delay: 3s"
+      ></div>
+      <div
+        class="shape"
+        style="width: 16px; height: 16px; left: 60%; animation-delay: 8s"
+      ></div>
+      <div
+        class="shape"
+        style="width: 30px; height: 30px; left: 70%; animation-delay: 12s"
+      ></div>
+      <div
+        class="shape"
+        style="width: 14px; height: 14px; left: 80%; animation-delay: 7s"
+      ></div>
+      <div
+        class="shape"
+        style="width: 26px; height: 26px; left: 90%; animation-delay: 14s"
+      ></div>
+    </div>
 
-
-    <title>Abdullah Ayyash</title>
-</head>
-<body>
+    <!-- Header -->
     <header>
-        <h1><a href="/" rel="home"><img id="logo-img" src="./images/logo.png" alt="Abdullah Ayyash"></a></h1>
+      <div class="header-container">
+        <a href="/" class="logo">Abdullah</a>
         <nav>
-            <ul>
-                <li class="list-items"><a href="/">About</a></li>
-                <li class="list-items"><a href="/#projects">Projects</a></li>
-                <li class="list-items"><a href="/contact.html">Contact</a></li>
-                <li class="list-items"><a href="#">Skills</a></li>
-                <li id="resume" class="list-items"><a href="https://drive.google.com/uc?export=download&id=11PJZdVxPxraTDRwcPXtCoCtssnv_0xYo">Resume</a></li>
-            </ul>
-            
+          <ul>
+            <li><a href="/">About</a></li>
+            <li><a href="/#projects">Projects</a></li>
+            <li><a href="/contact.html" class="active">Contact</a></li>
+            <li><a href="/#skills">Skills</a></li>
+            <li>
+              <a
+                href="https://drive.google.com/file/d/1QrG24LhVQwEtEmXhtXAAJF0GCHxrVuQB/view?usp=drive_link"
+                class="resume-btn"
+                target="_blank"
+                >Resume</a
+              >
+            </li>
+          </ul>
         </nav>
-
+        <button class="mobile-menu-btn" id="mobileMenuBtn">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+      <div class="mobile-menu" id="mobileMenu">
+        <ul>
+          <li><a href="/" class="mobile-link">About</a></li>
+          <li><a href="/#projects" class="mobile-link">Projects</a></li>
+          <li>
+            <a href="/contact.html" class="mobile-link active">Contact</a>
+          </li>
+          <li><a href="#skills" class="mobile-link">Skills</a></li>
+          <li>
+            <a
+              href="https://drive.google.com/file/d/1QrG24LhVQwEtEmXhtXAAJF0GCHxrVuQB/view?usp=drive_link"
+              class="mobile-link"
+              target="_blank"
+              >Resume</a
+            >
+          </li>
+        </ul>
+      </div>
     </header>
 
     <section id="contact-section">
+      <!-- Left Sidebar with Social Links -->
+      <aside id="aside-left">
+        <ul>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/abdullah-ayyash/"
+              target="_blank"
+            >
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/abdullah-ayyash" target="_blank">
+              <i class="fab fa-github"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://codepen.io/abdullahayyash" target="_blank">
+              <i class="fab fa-codepen"></i>
+            </a>
+          </li>
+        </ul>
+      </aside>
 
-        <main>
-            <h1 id="contact-h1">Let's Build Something Great Together!</h1>
-            <h2>Contact us and let's make your web dreams a reality.</h2>
-            <form>
-                <div>
-                    <label for="first-name">First Name: </label>
-                    <br>
-                    <input type="text" id="first-name" name="fname" class="inputs-field" required>
-                </div>
+      <main>
+        <div class="contact-header">
+          <h1 id="contact-h1">Let's Build Something Great Together!</h1>
+          <h2>Contact me and let's make your web dreams a reality.</h2>
+        </div>
 
-                <div>
-                    <label for="last-name">Last Name: </label>
-                    <br>
-                    <input type="text" id="last-name" name="lname" class="inputs-field" required>
-                </div>
-                <div>
-                    <label for="email">Email: </label>
-                    <br>
-                    <input type="email" id="email" name="email" class="inputs-field" required>
-                </div>
+        <form
+          class="contact-form"
+          action="https://formspree.io/f/mvgbogav"
+          method="POST"
+        >
+          <div class="form-row">
+            <div class="form-group">
+              <label for="first-name">First Name</label>
+              <input
+                type="text"
+                id="first-name"
+                name="fname"
+                class="inputs-field"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="last-name">Last Name</label>
+              <input
+                type="text"
+                id="last-name"
+                name="lname"
+                class="inputs-field"
+                required
+              />
+            </div>
+          </div>
 
-                <div>
-                    <label for="message">Message</label>
-                    <br>
-                    <textarea id="message" rows="7" cols="40" class="inputs-field"></textarea>
-                </div>
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              class="inputs-field"
+              required
+            />
+          </div>
 
-                <!-- <div>
-                    <button id="send-btn">Send Message</button>
-                </div> -->
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea
+              id="message"
+              name="message"
+              class="inputs-field"
+              placeholder="Tell me about your project..."
+              required
+            ></textarea>
+          </div>
 
-                <!-- <div>
-                    <label for="send-btn"></label>
-                    <input type="submit" id="send-btn" class="inputs-field">
-                </div> -->
+          <button type="submit" class="send-btn" id="send-btn">
+            <i class="fas fa-paper-plane"></i> Send Message
+          </button>
 
-                <div>
-                    <a id="send-btn" style="cursor: pointer">Send Message</a>
-                </div>
-
-                <div>
-                    <h3 style="display:none" id="sucessMessage">Message was sent ✅, We'll be in touch shortly..</h3>
-                </div>
-
-            </form>
-
-        </main>
-        
+          <div class="success-message" id="successMessage">
+            <i class="fas fa-check-circle"></i> Message sent successfully! I'll
+            get back to you soon.
+          </div>
+        </form>
+      </main>
     </section>
 
-
-    <footer>
-        
-    </footer>
-    <script src="/contact.js"></script>
-</body>
+    <script src="./contact.js"></script>
+  </body>
 </html>

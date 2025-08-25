@@ -2,82 +2,90 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="index.css" rel="stylesheet" />
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="./images/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./images/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="./images/favicon-16x16.png"
-    />
-    <link rel="manifest" href="./images/site.webmanifest" />
+    <title>Abdullah Ayyash - Full Stack Developer</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap"
       rel="stylesheet"
     />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
-
-    <title>Abdullah Ayyash</title>
+    <link rel="stylesheet" href="./index.css" />
   </head>
   <body>
+    <!-- Background Animation -->
+    <div class="bg-animation"></div>
+    <div class="floating-shapes">
+      <!-- generated dynmically  -->
+    </div>
+
+    <!-- Header -->
     <header>
-      <h1>
-        <a href="/" rel="home"
-          ><img id="logo-img" src="./images/logo.png" alt="Abdullah Ayyash"
-        /></a>
-      </h1>
-      <nav>
+      <div class="header-container">
+        <a href="/" class="logo">Abdullah</a>
+        <nav>
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="/contact.html">Contact</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li>
+              <a
+                href="https://drive.google.com/file/d/1QrG24LhVQwEtEmXhtXAAJF0GCHxrVuQB/view?usp=drive_link"
+                class="resume-btn"
+                target="_blank"
+                >Resume</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <button class="mobile-menu-btn" id="mobileMenuBtn">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+      <div class="mobile-menu" id="mobileMenu">
         <ul>
-          <li class="list-items"><a href="/">About</a></li>
-          <li class="list-items"><a href="/#projects">Projects</a></li>
-          <li class="list-items"><a href="/contact.html">Contact</a></li>
-          <li class="list-items"><a href="#">Skills</a></li>
-          <li class="list-items" id="resume">
+          <li><a href="#about" class="mobile-link">About</a></li>
+          <li><a href="#projects" class="mobile-link">Projects</a></li>
+          <li><a href="/contact.html" class="mobile-link">Contact</a></li>
+          <li><a href="#skills" class="mobile-link">Skills</a></li>
+          <li>
             <a
               href="https://drive.google.com/file/d/1QrG24LhVQwEtEmXhtXAAJF0GCHxrVuQB/view?usp=drive_link"
+              class="mobile-link"
+              target="_blank"
               >Resume</a
             >
           </li>
         </ul>
-      </nav>
+      </div>
     </header>
 
     <section id="main-section">
+      <!-- Left Sidebar with Social Links -->
       <aside id="aside-left">
         <ul>
           <li>
             <a
               href="https://www.linkedin.com/in/abdullah-ayyash/"
               target="_blank"
-              ><i class="fa fa-linkedin" style="font-size: 1.8rem"></i
-            ></a>
+            >
+              <i class="fab fa-linkedin-in"></i>
+            </a>
           </li>
           <li>
-            <a href="https://github.com/abdullah-ayyash" target="_blank"
-              ><i class="fa fa-github" style="font-size: 1.8rem"></i
-            ></a>
+            <a href="https://github.com/abdullah-ayyash" target="_blank">
+              <i class="fab fa-github"></i>
+            </a>
           </li>
           <li>
-            <a href="https://codepen.io/abdullahayyash" target="_blank"
-              ><i class="fa fa-codepen" style="font-size: 1.8rem"></i
-            ></a>
+            <a href="https://codepen.io/abdullahayyash" target="_blank">
+              <i class="fab fa-codepen"></i>
+            </a>
           </li>
         </ul>
       </aside>
@@ -85,21 +93,24 @@
       <main>
         <section id="about">
           <h1>Hi, my name is:</h1>
-          <h2 id="my-name"></h2>
+          <h2 id="my-name" class="typing-cursor"></h2>
           <h3>Crafting High-Quality Websites for Your Business</h3>
-          <p>
+          <p id="bio-p">
             Self-driven Full-Stack Engineer with expertise in JavaScript, React,
             Node.js, and Express.js. Adept problem-solver and collaborative team
             player, dedicated to delivering exceptional user experience.
           </p>
           <a href="#projects"><button>Check Out My Work</button></a>
         </section>
-        <hr />
+        <hr
+          style="border: 1px solid var(--border); width: 80%; margin: 2rem 0"
+        />
+
         <section id="projects">
           <h1>Projects</h1>
 
           <article>
-            <img src="./images/e-commerace.png" />
+            <img src="./images/shop-nex.png" alt="ShopNex Project" />
             <h2>ShopNex - Your Next-Gen Online Store</h2>
             <h3>PERN Stack (Postgres, Express, React, Node)</h3>
             <hr style="border: 1px solid white; width: 100%" />
@@ -111,12 +122,13 @@
             <a
               href="https://github.com/abdullah-ayyash/eShopify-Online-Store"
               target="_blank"
-              ><button>Repo</button></a
             >
+              <button>Repo</button>
+            </a>
           </article>
 
           <article>
-            <img src="./images/spotify.png" />
+            <img src="./images/spotify.png" alt="Spotify Project" />
             <h2>Jammming - Spotify API</h2>
             <h3>React.js, RESTful API</h3>
             <hr style="border: 1px solid white; width: 100%" />
@@ -124,40 +136,43 @@
               This React app allows users to search the Spotify library, create
               a custom playlist, then save it to their Spotify account.
             </p>
-            <a href="https://spotify-cc.surge.sh/" target="_blank"
-              ><button>Demo</button></a
-            >
+            <a href="https://spotify-cc.surge.sh/" target="_blank">
+              <button>Demo</button>
+            </a>
             <a
               href="https://github.com/abdullah-ayyash/jamming-spotify-api"
               target="_blank"
-              ><button>Repo</button></a
             >
+              <button>Repo</button>
+            </a>
           </article>
 
           <article>
-            <img src="./images/chess.png" />
+            <img src="./images/chess.png" alt="Chess Project" />
             <h2>Responsive Chess Club Website</h2>
             <h3>HTML,CSS</h3>
             <hr style="border: 1px solid white; width: 100%" />
             <p>
               A static HTML,CSS design for a Chess Club Website where chess
               enthusiasts of all ages and skill levels come together to enjoy
-              ,the game of kings.
+              the game of kings.
             </p>
             <a
               href="https://abdullah-ayyash.github.io/responsive-club-website/"
               target="_blank"
-              ><button>Demo</button></a
             >
+              <button>Demo</button>
+            </a>
             <a
               href="https://github.com/abdullah-ayyash/responsive-club-website"
               target="_blank"
-              ><button>Repo</button></a
             >
+              <button>Repo</button>
+            </a>
           </article>
 
           <article>
-            <img src="./images/cooperation.png" />
+            <img src="./images/cooperation.png" alt="B-Choice Project" />
             <h2>B-Choice App - Business Website</h2>
             <h3>HTML,CSS</h3>
             <hr style="border: 1px solid white; width: 100%" />
@@ -168,17 +183,19 @@
             <a
               href="https://abdullah-ayyash.github.io/flexbox-business-site-starting/"
               target="_blank"
-              ><button>Demo</button></a
             >
+              <button>Demo</button>
+            </a>
             <a
               href="https://github.com/abdullah-ayyash/flexbox-business-site-starting"
               target="_blank"
-              ><button>Repo</button></a
             >
+              <button>Repo</button>
+            </a>
           </article>
 
           <article>
-            <img src="./images/credit-card.png" />
+            <img src="./images/credit-card.png" alt="Credit Card Project" />
             <h2>Credit Card Checker</h2>
             <h3>Javascript</h3>
             <hr style="border: 1px solid white; width: 100%" />
@@ -189,12 +206,13 @@
             <a
               href="https://github.com/abdullah-ayyash/credit-card-checker"
               target="_blank"
-              ><button>Repo</button></a
             >
+              <button>Repo</button>
+            </a>
           </article>
 
           <article>
-            <img src="./images/dna.png" />
+            <img src="./images/dna.png" alt="DNA Project" />
             <h2>DNA Simulation</h2>
             <h3>Javascript</h3>
             <hr style="border: 1px solid white; width: 100%" />
@@ -205,20 +223,90 @@
             <a
               href="https://github.com/abdullah-ayyash/Pila-Aequor-Organism"
               target="_blank"
-              ><button>Repo</button></a
             >
+              <button>Repo</button>
+            </a>
           </article>
+        </section>
+
+        <hr
+          style="border: 1px solid var(--border); width: 80%; margin: 2rem auto"
+        />
+
+        <section id="skills">
+          <h1>Technical Skills</h1>
+
+          <div class="skills-container">
+            <div class="skill-category">
+              <h3>Frontend</h3>
+              <div class="skills-grid">
+                <div class="skill-item">
+                  <i class="fab fa-react"></i>
+                  <span>React</span>
+                </div>
+                <div class="skill-item">
+                  <i class="fab fa-js-square"></i>
+                  <span>JavaScript</span>
+                </div>
+                <div class="skill-item">
+                  <i class="fab fa-html5"></i>
+                  <span>HTML5</span>
+                </div>
+                <div class="skill-item">
+                  <i class="fab fa-css3-alt"></i>
+                  <span>CSS3</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="skill-category">
+              <h3>Backend</h3>
+              <div class="skills-grid">
+                <div class="skill-item">
+                  <i class="fab fa-node-js"></i>
+                  <span>Node.js</span>
+                </div>
+                <div class="skill-item">
+                  <i class="fas fa-server"></i>
+                  <span>Express.js</span>
+                </div>
+                <div class="skill-item">
+                  <i class="fas fa-database"></i>
+                  <span>PostgreSQL</span>
+                </div>
+                <div class="skill-item">
+                  <i class="fas fa-leaf"></i>
+                  <span>MongoDB</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="skill-category">
+              <h3>Tools & Technologies</h3>
+              <div class="skills-grid">
+                <div class="skill-item">
+                  <i class="fab fa-git-alt"></i>
+                  <span>Git</span>
+                </div>
+                <div class="skill-item">
+                  <i class="fab fa-github"></i>
+                  <span>GitHub</span>
+                </div>
+                <div class="skill-item">
+                  <i class="fas fa-code-branch"></i>
+                  <span>REST APIs</span>
+                </div>
+                <div class="skill-item">
+                  <i class="fas fa-terminal"></i>
+                  <span>Command Line</span>
+                </div>
+              </div>
+            </div>
+          </div>
         </section>
       </main>
     </section>
-    <section id="preview">
-      <div id="preview-div">
-        <img id="preview-img" style="cursor: zoom-in" />
-        <h1 id="close-btn">X</h1>
-      </div>
-    </section>
 
-    <footer></footer>
-    <script src="index.js"></script>
+    <script src="./index.js"></script>
   </body>
 </html>

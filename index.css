@@ -332,7 +332,7 @@ main #about h3 {
 main #about p {
   line-height: 1.5;
   width: 80%;
-  text-align: justify;
+  text-align: left;
   color: var(--text-secondary);
   opacity: 0;
   animation: fadeInUp 1s ease 0.8s forwards;

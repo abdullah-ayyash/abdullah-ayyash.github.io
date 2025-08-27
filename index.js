@@ -101,10 +101,11 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
 
 function generateFloatingShapes() {
   const container = document.querySelector(".floating-shapes");
-  const numShapes = 30; // Increase this number as needed
+  const numShapes = 30;
 
   for (let i = 0; i < numShapes; i++) {
-    const size = Math.floor(Math.random() * 20) + 10; // 10px–30px
+    const size = Math.floor(Math.random() * 8) + 4; // 4px–12px
+
     const left = Math.random() * 100; // % across the screen
     const delay = Math.random() * 10; // 0–10s
 

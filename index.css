@@ -179,7 +179,7 @@ header {
   background: rgba(10, 10, 10, 0.8);
   backdrop-filter: blur(20px);
   border-bottom: 1px solid var(--border);
-  z-index: 1000;
+  z-index: 1002;
   transition: all 0.3s ease;
 }
 
@@ -287,7 +287,7 @@ nav a:hover::after {
   background: rgba(10, 10, 10, 0.95);
   backdrop-filter: blur(20px);
   border-bottom: 1px solid var(--border);
-  z-index: 999;
+  z-index: 1002;
   transform: translateY(-100%);
   transition: transform 0.3s ease;
 }

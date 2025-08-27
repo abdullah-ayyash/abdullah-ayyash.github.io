@@ -101,12 +101,12 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
 
 function generateFloatingShapes() {
   const container = document.querySelector(".floating-shapes");
-  const numShapes = 30;
+  const numShapes = 50;
 
   for (let i = 0; i < numShapes; i++) {
     const size = Math.floor(Math.random() * 8) + 4; // 4px–12px
-
     const left = Math.random() * 100; // % across the screen
+    const top = Math.random() * 100;
     const delay = Math.random() * 10; // 0–10s
 
     const div = document.createElement("div");
@@ -114,6 +114,7 @@ function generateFloatingShapes() {
     div.style.width = `${size}px`;
     div.style.height = `${size}px`;
     div.style.left = `${left}%`;
+    div.style.top = `${top}%`;
     div.style.animationDelay = `${delay}s`;
     div.style.animationDuration = `${15 + Math.random() * 10}s`;
 

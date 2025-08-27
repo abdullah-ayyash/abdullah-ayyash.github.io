@@ -72,33 +72,41 @@ body {
   filter: blur(0.5px);
   box-shadow: 0 0 10px var(--accent), 0 0 20px rgba(0, 255, 136, 0.5),
     0 0 30px rgba(0, 255, 136, 0.3);
-  opacity: 0.8;
+  opacity: 0;
   animation: firefly 15s infinite ease-in-out;
 }
 
 @keyframes firefly {
-  0%,
-  100% {
-    transform: translateY(100vh) scale(0.5);
+  0% {
+    transform: translate(0px, 20px) scale(0.5);
     opacity: 0;
   }
   10% {
     opacity: 1;
   }
   25% {
-    transform: translateY(75vh) scale(1);
+    transform: translate(-30px, -15px) scale(1);
     opacity: 0.8;
   }
-  50% {
-    transform: translateY(50vh) scale(0.7);
+  40% {
+    transform: translate(20px, -40px) scale(0.7);
     opacity: 1;
   }
-  75% {
-    transform: translateY(25vh) scale(1.2);
+  60% {
+    transform: translate(-15px, -20px) scale(1.2);
     opacity: 0.6;
   }
+  75% {
+    transform: translate(25px, -10px) scale(0.8);
+    opacity: 0.9;
+  }
   90% {
-    opacity: 0.3;
+    transform: translate(-10px, 5px) scale(0.6);
+    opacity: 0.4;
+  }
+  100% {
+    transform: translate(0px, 20px) scale(0.5);
+    opacity: 0;
   }
 }
 

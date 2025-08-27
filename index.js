@@ -123,3 +123,46 @@ function generateFloatingShapes() {
 }
 
 generateFloatingShapes();
+
+// Mouse interactions
+function addMouseInteraction() {
+  document.addEventListener("mousemove", (e) => {
+    const shapes = document.querySelectorAll(".shape");
+    shapes.forEach((shape) => {
+      const rect = shape.getBoundingClientRect();
+      const distance = Math.sqrt(
+        Math.pow(e.clientX - (rect.left + rect.width / 2), 2) +
+          Math.pow(e.clientY - (rect.top + rect.height / 2), 2)
+      );
+
+      if (distance < 150) {
+        // Calculate how close (0 = far, 1 = very close)
+        const proximity = 1 - distance / 150;
+
+        // More dramatic effects based on proximity
+        const brightness = 1 + proximity * 2; // 1x to 3x brightness
+        const blur = 0.5 - proximity * 0.4; // 0.5px to 0.1px blur
+        const scale = 1 + proximity * 0.5; // 1x to 1.5x scale
+
+        shape.style.filter = `blur(${blur}px) brightness(${brightness})`;
+        shape.style.transform = `scale(${scale})`;
+        shape.style.transition = "all 0.2s ease";
+
+        // Add a subtle glow ring effect
+        shape.style.boxShadow = `
+          0 0 ${10 + proximity * 20}px var(--accent),
+          0 0 ${20 + proximity * 30}px rgba(0, 255, 136, 0.5),
+          0 0 ${30 + proximity * 40}px rgba(0, 255, 136, 0.3)
+        `;
+      } else {
+        // Reset to normal
+        shape.style.filter = "blur(0.5px) brightness(1)";
+        shape.style.transform = "scale(1)";
+        shape.style.boxShadow =
+          "0 0 10px var(--accent), 0 0 20px rgba(0, 255, 136, 0.5), 0 0 30px rgba(0, 255, 136, 0.3)";
+      }
+    });
+  });
+}
+
+addMouseInteraction();

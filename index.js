@@ -67,7 +67,7 @@ function frame() {
 
   if (index === nameList.length) {
     clearInterval(timeId);
-    // Remove the typing cursor class when animation is complete
+    // Removes the typing cursor class when animation is complete
     myName.classList.remove("typing-cursor");
   }
 }
@@ -101,10 +101,10 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
 
 function generateFloatingShapes() {
   const container = document.querySelector(".floating-shapes");
-  const numShapes = 50;
+  const numShapes = 40;
 
   for (let i = 0; i < numShapes; i++) {
-    const size = Math.floor(Math.random() * 8) + 4; // 4px–12px
+    const size = Math.floor(Math.random() * 10) + 2; // 2px–12px
     const left = Math.random() * 100; // % across the screen
     const top = Math.random() * 100;
     const delay = Math.random() * 10; // 0–10s

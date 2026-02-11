@@ -38,7 +38,8 @@ body {
   width: 100%;
   height: 100%;
   z-index: -1;
-  background: radial-gradient(
+  background:
+    radial-gradient(
       ellipse at top,
       rgba(0, 255, 136, 0.05) 0%,
       transparent 50%
@@ -71,7 +72,9 @@ body {
   );
   border-radius: 50%;
   filter: blur(0.5px);
-  box-shadow: 0 0 10px var(--accent), 0 0 20px rgba(0, 255, 136, 0.5),
+  box-shadow:
+    0 0 10px var(--accent),
+    0 0 20px rgba(0, 255, 136, 0.5),
     0 0 30px rgba(0, 255, 136, 0.3);
   opacity: 0;
   animation: firefly 15s infinite ease-in-out;
@@ -783,4 +786,38 @@ main #skills h1 {
   .skill-item i {
     font-size: 1.8rem;
   }
+}
+
+/* FEATURED PROJECT — Prime Takeoffs */
+#prime-takeoffs {
+  position: relative;
+  width: 30%;
+  background:
+    linear-gradient(135deg, rgba(0, 255, 136, 0.15), rgba(0, 255, 136, 0.05)),
+    var(--bg-card);
+  border: 2px solid var(--accent);
+  box-shadow: 0 0 40px var(--accent-glow); /* glow ON by default */
+  z-index: 2;
+  transform: none; /* no initial scale */
+}
+
+/* Featured badge */
+#prime-takeoffs::before {
+  content: "FEATURED";
+  position: absolute;
+  top: -12px;
+  right: -12px;
+  background: var(--accent);
+  color: var(--bg-primary);
+  padding: 4px 10px;
+  font-size: 0.7rem;
+  font-weight: 700;
+  border-radius: 6px;
+  box-shadow: 0 0 10px var(--accent-glow);
+}
+
+/* Hover effect — scale ONLY on hover */
+#prime-takeoffs:hover {
+  transform: scale(1.12) translateY(-6px);
+  box-shadow: 0 0 60px var(--accent-glow);
 }

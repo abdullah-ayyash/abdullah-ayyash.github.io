@@ -1,0 +1,15 @@
+<svg viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-white">
+  <!-- Icon -->
+  <g transform="translate(10,16)">
+    <path d="M10 30L30 15L55 45L80 30" stroke="#3b82f6" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" fill="none"></path>
+    <circle cx="10" cy="30" r="3" fill="#ffffff"></circle>
+    <circle cx="30" cy="15" r="3" fill="#ffffff"></circle>
+    <circle cx="55" cy="45" r="3" fill="#ffffff"></circle>
+    <circle cx="80" cy="30" r="5" fill="#3b82f6"></circle>
+  </g>
+
+  <!-- Text -->
+  <text x="60" y="84" text-anchor="middle" fill="#ffffff" style="font: 800 18px ui-sans-serif, system-ui, sans-serif; letter-spacing: -0.025em;">
+    SWIFT<tspan fill="#3b82f6">LEAD</tspan>
+  </text>
+</svg>

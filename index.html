@@ -1,413 +1,634 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Abdullah Ayyash - Full Stack Developer</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Abdullah Ayyash | Full Stack Developer (React, Node.js, Laravel)</title>
+    <meta
+      name="description"
+      content="Portfolio of Abdullah Ayyash, a full stack developer building fast, reliable web apps with React, Node.js, Express and Laravel. See projects and get in touch."
+    />
+    <link rel="canonical" href="https://abdullahayyash.ca/" />
+    <meta
+      name="robots"
+      content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+    />
+    <meta name="author" content="Abdullah Ayyash" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+
+    <!-- Browser UI -->
+    <meta name="theme-color" content="#0a0a0a" />
+    <meta name="color-scheme" content="dark" />
+    <meta name="application-name" content="Abdullah Ayyash" />
+    <meta name="apple-mobile-web-app-title" content="Abdullah" />
+
+    <!-- Icons -->
+    <link rel="icon" href="/favicon.ico" sizes="48x48" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Abdullah Ayyash" />
+    <meta property="og:title" content="Abdullah Ayyash | Full Stack Developer" />
+    <meta
+      property="og:description"
+      content="Full stack developer building fast, reliable web apps with React, Node.js, Express and Laravel. See projects and get in touch."
+    />
+    <meta property="og:url" content="https://abdullahayyash.ca/" />
+    <meta property="og:image" content="https://abdullahayyash.ca/og-image.png" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta
+      property="og:image:alt"
+      content="Abdullah Ayyash, Full Stack Developer. React, Node.js, Express and Laravel."
+    />
+
+    <!-- Twitter / X -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Abdullah Ayyash | Full Stack Developer" />
+    <meta
+      name="twitter:description"
+      content="Full stack developer building fast, reliable web apps with React, Node.js, Express and Laravel."
+    />
+    <meta name="twitter:image" content="https://abdullahayyash.ca/og-image.png" />
+    <meta
+      name="twitter:image:alt"
+      content="Abdullah Ayyash, Full Stack Developer. React, Node.js, Express and Laravel."
+    />
+
+    <!-- Fonts and styles -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@600&display=swap"
       rel="stylesheet"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    />
-    <link rel="stylesheet" href="./index.css" />
-  </head>
-  <body>
-    <!-- Background Animation -->
-    <div class="bg-animation"></div>
-    <div class="floating-shapes">
-      <!-- generated dynmically  -->
-    </div>
+    <link rel="stylesheet" href="/styles.css" />
 
-    <!-- Header -->
-    <header>
-      <div class="header-container">
-        <a href="/" class="logo">Abdullah</a>
-        <nav>
-          <ul>
+    <!-- Structured data -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "WebSite",
+            "@id": "https://abdullahayyash.ca/#website",
+            "url": "https://abdullahayyash.ca/",
+            "name": "Abdullah Ayyash",
+            "description": "Portfolio of Abdullah Ayyash, a full stack developer.",
+            "inLanguage": "en",
+            "publisher": { "@id": "https://abdullahayyash.ca/#person" }
+          },
+          {
+            "@type": "Person",
+            "@id": "https://abdullahayyash.ca/#person",
+            "name": "Abdullah Ayyash",
+            "url": "https://abdullahayyash.ca/",
+            "jobTitle": "Full Stack Developer",
+            "description": "Full stack developer with expertise in JavaScript, React, Node.js, Express.js and Laravel.",
+            "sameAs": [
+              "https://www.linkedin.com/in/abdullah-ayyash/",
+              "https://github.com/abdullah-ayyash",
+              "https://codepen.io/abdullahayyash"
+            ],
+            "knowsAbout": [
+              "JavaScript",
+              "React",
+              "Node.js",
+              "Express.js",
+              "Laravel",
+              "PHP",
+              "PostgreSQL",
+              "MongoDB",
+              "Docker",
+              "REST APIs",
+              "Web development"
+            ]
+          },
+          {
+            "@type": "ProfilePage",
+            "@id": "https://abdullahayyash.ca/#webpage",
+            "url": "https://abdullahayyash.ca/",
+            "name": "Abdullah Ayyash | Full Stack Developer (React, Node.js, Laravel)",
+            "isPartOf": { "@id": "https://abdullahayyash.ca/#website" },
+            "about": { "@id": "https://abdullahayyash.ca/#person" },
+            "mainEntity": { "@id": "https://abdullahayyash.ca/#person" },
+            "primaryImageOfPage": {
+              "@type": "ImageObject",
+              "url": "https://abdullahayyash.ca/og-image.png",
+              "width": 1200,
+              "height": 630
+            },
+            "dateModified": "2026-10-30",
+            "inLanguage": "en"
+          },
+          {
+            "@type": "ItemList",
+            "@id": "https://abdullahayyash.ca/#projects",
+            "name": "Projects by Abdullah Ayyash",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "item": {
+                  "@type": "WebApplication",
+                  "name": "Prime Takeoffs",
+                  "description": "A construction takeoff and estimation platform for linear and area measurements on blueprint PDFs, built with Laravel, React, Docker and Python.",
+                  "url": "https://stage.primetakeoffs.com/",
+                  "applicationCategory": "BusinessApplication",
+                  "operatingSystem": "Web",
+                  "author": { "@id": "https://abdullahayyash.ca/#person" }
+                }
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "item": {
+                  "@type": "WebApplication",
+                  "name": "SwiftLead",
+                  "description": "A lead management and performance optimization platform for multi-site pipeline tracking, built with Laravel 12, React 19, Inertia.js and PostgreSQL.",
+                  "url": "https://swiftlead.app/",
+                  "applicationCategory": "BusinessApplication",
+                  "operatingSystem": "Web",
+                  "author": { "@id": "https://abdullahayyash.ca/#person" }
+                }
+              },
+              {
+                "@type": "ListItem",
+                "position": 3,
+                "item": {
+                  "@type": "SoftwareSourceCode",
+                  "name": "AutoSave Feedback Pro",
+                  "description": "A modular feedback system for web applications with animations, multiple themes and configuration options.",
+                  "url": "https://abdullah-ayyash.github.io/auto-save-feedback/demo/",
+                  "codeRepository": "https://github.com/abdullah-ayyash/auto-save-feedback",
+                  "programmingLanguage": ["HTML", "CSS", "JavaScript"],
+                  "author": { "@id": "https://abdullahayyash.ca/#person" }
+                }
+              },
+              {
+                "@type": "ListItem",
+                "position": 4,
+                "item": {
+                  "@type": "SoftwareSourceCode",
+                  "name": "Robust Toast Notifications",
+                  "description": "A production-ready notification system with validation, duplicate prevention, automatic cleanup and error reporting.",
+                  "url": "https://abdullah-ayyash.github.io/robust-toast-notifications/",
+                  "codeRepository": "https://github.com/abdullah-ayyash/robust-toast-notifications",
+                  "programmingLanguage": ["HTML", "CSS", "JavaScript"],
+                  "author": { "@id": "https://abdullahayyash.ca/#person" }
+                }
+              },
+              {
+                "@type": "ListItem",
+                "position": 5,
+                "item": {
+                  "@type": "SoftwareSourceCode",
+                  "name": "ShopNex",
+                  "description": "An online store web application built with the PERN stack (PostgreSQL, Express, React, Node.js).",
+                  "url": "https://github.com/abdullah-ayyash/eShopify-Online-Store",
+                  "codeRepository": "https://github.com/abdullah-ayyash/eShopify-Online-Store",
+                  "programmingLanguage": "JavaScript",
+                  "author": { "@id": "https://abdullahayyash.ca/#person" }
+                }
+              },
+              {
+                "@type": "ListItem",
+                "position": 6,
+                "item": {
+                  "@type": "SoftwareSourceCode",
+                  "name": "Jammming",
+                  "description": "A React app that searches the Spotify library, builds a custom playlist and saves it to a Spotify account.",
+                  "url": "https://spotify-cc.surge.sh/",
+                  "codeRepository": "https://github.com/abdullah-ayyash/jamming-spotify-api",
+                  "programmingLanguage": "JavaScript",
+                  "author": { "@id": "https://abdullahayyash.ca/#person" }
+                }
+              },
+              {
+                "@type": "ListItem",
+                "position": 7,
+                "item": {
+                  "@type": "SoftwareSourceCode",
+                  "name": "Responsive Chess Club Website",
+                  "description": "A static, responsive HTML and CSS website for a chess club.",
+                  "url": "https://abdullah-ayyash.github.io/responsive-club-website/",
+                  "codeRepository": "https://github.com/abdullah-ayyash/responsive-club-website",
+                  "programmingLanguage": ["HTML", "CSS"],
+                  "author": { "@id": "https://abdullahayyash.ca/#person" }
+                }
+              },
+              {
+                "@type": "ListItem",
+                "position": 8,
+                "item": {
+                  "@type": "SoftwareSourceCode",
+                  "name": "B-Choice App Business Website",
+                  "description": "A simple, modern business website for a mobile app that offers alternatives to popular phone apps.",
+                  "url": "https://abdullah-ayyash.github.io/flexbox-business-site-starting/",
+                  "codeRepository": "https://github.com/abdullah-ayyash/flexbox-business-site-starting",
+                  "programmingLanguage": ["HTML", "CSS"],
+                  "author": { "@id": "https://abdullahayyash.ca/#person" }
+                }
+              },
+              {
+                "@type": "ListItem",
+                "position": 9,
+                "item": {
+                  "@type": "SoftwareSourceCode",
+                  "name": "Credit Card Checker",
+                  "description": "A JavaScript credit card checker that validates card numbers with the Luhn algorithm.",
+                  "url": "https://github.com/abdullah-ayyash/credit-card-checker",
+                  "codeRepository": "https://github.com/abdullah-ayyash/credit-card-checker",
+                  "programmingLanguage": "JavaScript",
+                  "author": { "@id": "https://abdullahayyash.ca/#person" }
+                }
+              },
+              {
+                "@type": "ListItem",
+                "position": 10,
+                "item": {
+                  "@type": "SoftwareSourceCode",
+                  "name": "DNA Simulation",
+                  "description": "A simulation of the DNA and mutation speed of a living system (Pila-Aequor-Organism) using JavaScript objects.",
+                  "url": "https://github.com/abdullah-ayyash/Pila-Aequor-Organism",
+                  "codeRepository": "https://github.com/abdullah-ayyash/Pila-Aequor-Organism",
+                  "programmingLanguage": "JavaScript",
+                  "author": { "@id": "https://abdullahayyash.ca/#person" }
+                }
+              }
+            ]
+          }
+        ]
+      }
+    </script>
+  </head>
+
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <div class="bg-glow" aria-hidden="true"></div>
+    <div class="fireflies" aria-hidden="true"></div>
+
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="logo" href="/" aria-label="Abdullah Ayyash, home">Abdullah</a>
+
+        <nav aria-label="Primary">
+          <ul class="nav-list">
             <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="/contact.html">Contact</a></li>
-            <li><a href="#skills">Skills</a></li>
             <li>
               <a
+                class="btn btn-sm"
                 href="https://drive.google.com/file/d/1QrG24LhVQwEtEmXhtXAAJF0GCHxrVuQB/view?usp=drive_link"
-                class="resume-btn"
                 target="_blank"
-                >Resume</a
+                rel="noopener noreferrer"
+                >Resume<span class="sr-only"> (opens in a new tab)</span></a
               >
             </li>
           </ul>
         </nav>
-        <button class="mobile-menu-btn" id="mobileMenuBtn">
-          <i class="fas fa-bars"></i>
+
+        <button
+          class="menu-btn"
+          id="menu-btn"
+          type="button"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+          aria-label="Open menu"
+        >
+          <svg class="icon icon-open" aria-hidden="true" focusable="false"><use href="/icons.svg#i-menu"></use></svg>
+          <svg class="icon icon-close" aria-hidden="true" focusable="false"><use href="/icons.svg#i-close"></use></svg>
         </button>
-      </div>
-      <div class="mobile-menu" id="mobileMenu">
-        <ul>
-          <li><a href="#about" class="mobile-link">About</a></li>
-          <li><a href="#projects" class="mobile-link">Projects</a></li>
-          <li><a href="/contact.html" class="mobile-link">Contact</a></li>
-          <li><a href="#skills" class="mobile-link">Skills</a></li>
-          <li>
-            <a
-              href="https://drive.google.com/file/d/1QrG24LhVQwEtEmXhtXAAJF0GCHxrVuQB/view?usp=drive_link"
-              class="mobile-link"
-              target="_blank"
-              >Resume</a
-            >
-          </li>
-        </ul>
       </div>
     </header>
 
-    <section id="main-section">
-      <!-- Left Sidebar with Social Links -->
-      <aside id="aside-left">
-        <ul>
-          <li>
-            <a
-              href="https://www.linkedin.com/in/abdullah-ayyash/"
-              target="_blank"
-            >
-              <i class="fab fa-linkedin-in"></i>
-            </a>
-          </li>
-          <li>
-            <a href="https://github.com/abdullah-ayyash" target="_blank">
-              <i class="fab fa-github"></i>
-            </a>
-          </li>
-          <li>
-            <a href="https://codepen.io/abdullahayyash" target="_blank">
-              <i class="fab fa-codepen"></i>
-            </a>
-          </li>
-        </ul>
-      </aside>
+    <nav class="mobile-menu" id="mobile-menu" aria-label="Mobile">
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="/contact.html">Contact</a></li>
+        <li>
+          <a
+            href="https://drive.google.com/file/d/1QrG24LhVQwEtEmXhtXAAJF0GCHxrVuQB/view?usp=drive_link"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Resume<span class="sr-only"> (opens in a new tab)</span></a
+          >
+        </li>
+      </ul>
+    </nav>
 
-      <main>
-        <section id="about">
-          <h1>Hi, my name is:</h1>
-          <h2 id="my-name" class="typing-cursor"></h2>
-          <h3>Crafting High-Quality Web Apps for Your Business</h3>
-          <p id="bio-p">
-            Self-driven Full-Stack Engineer with expertise in JavaScript, React,
-            Node.js, and Express.js. Adept problem-solver and collaborative team
-            player, dedicated to delivering exceptional user experience.
+    <ul class="social-rail" aria-label="Social links">
+      <li>
+        <a href="https://www.linkedin.com/in/abdullah-ayyash/" target="_blank" rel="me noopener noreferrer" aria-label="LinkedIn (opens in a new tab)">
+          <svg class="icon" aria-hidden="true" focusable="false"><use href="/icons.svg#i-linkedin"></use></svg>
+        </a>
+      </li>
+      <li>
+        <a href="https://github.com/abdullah-ayyash" target="_blank" rel="me noopener noreferrer" aria-label="GitHub (opens in a new tab)">
+          <svg class="icon" aria-hidden="true" focusable="false"><use href="/icons.svg#i-github"></use></svg>
+        </a>
+      </li>
+      <li>
+        <a href="https://codepen.io/abdullahayyash" target="_blank" rel="me noopener noreferrer" aria-label="CodePen (opens in a new tab)">
+          <svg class="icon" aria-hidden="true" focusable="false"><use href="/icons.svg#i-codepen"></use></svg>
+        </a>
+      </li>
+    </ul>
+
+    <main id="main">
+      <section class="hero" id="about" aria-labelledby="hero-title">
+        <div class="hero-inner">
+          <h1 class="hero-title" id="hero-title">
+            <span class="name"><span class="name-text">Abdullah Ayyash</span></span>
+            <span class="sr-only"> - </span>
+            <span class="role">Full Stack Developer</span>
+          </h1>
+          <p class="tagline">Crafting high-quality web apps for your business.</p>
+          <p class="hero-bio">
+            Self-driven full-stack engineer with expertise in JavaScript,
+            React, Node.js, Express.js and Laravel. A problem-solver and
+            collaborative team player, dedicated to delivering an exceptional
+            user experience.
           </p>
-          <a href="#projects"><button>Check Out My Work</button></a>
-        </section>
-        <hr
-          style="border: 1px solid var(--border); width: 80%; margin: 2rem auto"
-        />
-        <section id="skills">
-          <h1>Technical Skills</h1>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#projects">View my work</a>
+            <a class="btn btn-quiet" href="/contact.html">Get in touch</a>
+          </div>
+        </div>
+      </section>
 
-          <div class="skills-container">
-            <div class="skill-category">
+      <section class="section" id="skills" aria-labelledby="skills-title">
+        <div class="container">
+          <div class="section-head">
+            <h2 class="section-title" id="skills-title">Technical skills</h2>
+          </div>
+
+          <div class="skill-groups">
+            <div class="skill-group">
               <h3>Frontend</h3>
-              <div class="skills-grid">
-                <div class="skill-item">
-                  <i class="fab fa-react"></i>
-                  <span>React</span>
-                </div>
-                <div class="skill-item">
-                  <i class="fab fa-js-square"></i>
-                  <span>JavaScript</span>
-                </div>
-                <div class="skill-item">
-                  <i class="fab fa-html5"></i>
-                  <span>HTML5</span>
-                </div>
-                <div class="skill-item">
-                  <i class="fab fa-css3-alt"></i>
-                  <span>CSS3</span>
-                </div>
-              </div>
+              <ul class="skill-list">
+                <li><svg class="icon" aria-hidden="true" focusable="false"><use href="/icons.svg#i-react"></use></svg>React</li>
+                <li><svg class="icon" aria-hidden="true" focusable="false"><use href="/icons.svg#i-js"></use></svg>JavaScript</li>
+                <li><svg class="icon" aria-hidden="true" focusable="false"><use href="/icons.svg#i-html5"></use></svg>HTML5</li>
+                <li><svg class="icon" aria-hidden="true" focusable="false"><use href="/icons.svg#i-css3"></use></svg>CSS3</li>
+              </ul>
             </div>
 
-            <div class="skill-category">
+            <div class="skill-group">
               <h3>Backend</h3>
-              <div class="skills-grid">
-                <div class="skill-item">
-                  <i class="fab fa-node-js"></i>
-                  <span>Node.js</span>
-                </div>
-                <div class="skill-item">
-                  <i class="fas fa-server"></i>
-                  <span>Express.js</span>
-                </div>
-                <div class="skill-item">
-                  <i class="fas fa-database"></i>
-                  <span>PostgreSQL</span>
-                </div>
-                <div class="skill-item">
-                  <i class="fas fa-leaf"></i>
-                  <span>MongoDB</span>
-                </div>
-              </div>
+              <ul class="skill-list">
+                <li><svg class="icon" aria-hidden="true" focusable="false"><use href="/icons.svg#i-node"></use></svg>Node.js</li>
+                <li><svg class="icon" aria-hidden="true" focusable="false"><use href="/icons.svg#i-server"></use></svg>Express.js</li>
+                <li><svg class="icon" aria-hidden="true" focusable="false"><use href="/icons.svg#i-laravel"></use></svg>Laravel</li>
+                <li><svg class="icon" aria-hidden="true" focusable="false"><use href="/icons.svg#i-php"></use></svg>PHP</li>
+                <li><svg class="icon" aria-hidden="true" focusable="false"><use href="/icons.svg#i-database"></use></svg>PostgreSQL</li>
+                <li><svg class="icon" aria-hidden="true" focusable="false"><use href="/icons.svg#i-leaf"></use></svg>MongoDB</li>
+              </ul>
             </div>
 
-            <div class="skill-category">
-              <h3>Tools & Technologies</h3>
-              <div class="skills-grid">
-                <div class="skill-item">
-                  <i class="fab fa-git-alt"></i>
-                  <span>Git</span>
-                </div>
-                <div class="skill-item">
-                  <i class="fab fa-github"></i>
-                  <span>GitHub</span>
-                </div>
-                <div class="skill-item">
-                  <i class="fas fa-code-branch"></i>
-                  <span>REST APIs</span>
-                </div>
-                <div class="skill-item">
-                  <i class="fas fa-terminal"></i>
-                  <span>Command Line</span>
-                </div>
-              </div>
+            <div class="skill-group">
+              <h3>Tools and technologies</h3>
+              <ul class="skill-list">
+                <li><svg class="icon" aria-hidden="true" focusable="false"><use href="/icons.svg#i-git"></use></svg>Git</li>
+                <li><svg class="icon" aria-hidden="true" focusable="false"><use href="/icons.svg#i-github"></use></svg>GitHub</li>
+                <li><svg class="icon" aria-hidden="true" focusable="false"><use href="/icons.svg#i-docker"></use></svg>Docker</li>
+                <li><svg class="icon" aria-hidden="true" focusable="false"><use href="/icons.svg#i-branch"></use></svg>REST APIs</li>
+                <li><svg class="icon" aria-hidden="true" focusable="false"><use href="/icons.svg#i-terminal"></use></svg>Command line</li>
+              </ul>
             </div>
           </div>
-        </section>
+        </div>
+      </section>
 
-        <hr
-          style="border: 1px solid var(--border); width: 80%; margin: 2rem auto"
-        />
-
-        <section id="projects">
-          <h1>Projects</h1>
-
-          <article id="prime-takeoffs">
-            <img
-              src="./images/projects/primetakeoffs.png"
-              alt="Prime Takeoffs Project"
-            />
-
-            <h2>Prime Takeoffs</h2>
-            <h3>Laravel • React • PHP • Docker • Python</h3>
-            <hr style="border: 1px solid white; width: 100%" />
-
-            <p>
-              A construction takeoff and estimation platform enabling
-              contractors to perform precise linear and area measurements on
-              blueprint PDFs. Built with a scalable Laravel backend,
-              high‑performance React interface, and containerized services
-              powered by Docker and Python for advanced processing.
+      <section class="section" id="projects" aria-labelledby="projects-title">
+        <div class="container">
+          <div class="section-head">
+            <h2 class="section-title" id="projects-title">Projects</h2>
+            <p class="section-intro">
+              Selected work: production platforms, open-source UI components
+              and practice builds.
             </p>
+          </div>
 
-            <a href="https://stage.primetakeoffs.com/" target="_blank">
-              <button>Live Demo</button>
-            </a>
-          </article>
+          <div class="project-grid">
+            <article class="card card-featured" id="prime-takeoffs">
+              <div class="card-head">
+                <img class="card-icon" src="/images/projects/primetakeoffs.png" alt="Prime Takeoffs logo: a ruler and a 3D cube" width="256" height="256" loading="lazy" decoding="async" />
+                <h3>Prime Takeoffs</h3>
+                <span class="badge">Featured</span>
+              </div>
+              <p class="card-desc">
+                A construction takeoff and estimation platform that lets
+                contractors take precise linear and area measurements on
+                blueprint PDFs. Built with a scalable Laravel backend, a
+                high-performance React interface, and containerized services
+                powered by Docker and Python for advanced processing.
+              </p>
+              <ul class="tags" aria-label="Technologies">
+                <li>Laravel</li><li>React</li><li>PHP</li><li>Docker</li><li>Python</li>
+              </ul>
+              <div class="card-actions">
+                <a class="btn btn-sm" href="https://stage.primetakeoffs.com/" target="_blank" rel="noopener noreferrer">Live demo<span class="sr-only"> of Prime Takeoffs (opens in a new tab)</span><svg class="icon" aria-hidden="true" focusable="false"><use href="/icons.svg#i-external"></use></svg></a>
+              </div>
+            </article>
 
-          <article id="swift-lead">
-            <img
-              src="./images/projects/swift-lead.svg"
-              alt="SwiftLead Project"
-            />
+            <article class="card" id="swiftlead">
+              <div class="card-head">
+                <img class="card-icon" src="/images/projects/swift-lead.svg" alt="SwiftLead logo" width="120" height="120" loading="lazy" decoding="async" />
+                <h3>SwiftLead: your revenue control panel</h3>
+              </div>
+              <p class="card-desc">
+                A lead management and performance optimization platform for
+                multi-site pipeline tracking. It includes a dynamic valuation
+                engine, detailed attribution and real-time performance
+                analytics to streamline conversion workflows.
+              </p>
+              <ul class="tags" aria-label="Technologies">
+                <li>Laravel 12</li><li>React 19</li><li>Inertia.js</li><li>PostgreSQL</li>
+              </ul>
+              <div class="card-actions">
+                <a class="btn btn-sm" href="https://swiftlead.app/" target="_blank" rel="noopener noreferrer">Live demo<span class="sr-only"> of SwiftLead (opens in a new tab)</span><svg class="icon" aria-hidden="true" focusable="false"><use href="/icons.svg#i-external"></use></svg></a>
+              </div>
+            </article>
 
-            <h2>SwiftLead - Your Revenue Control Panel.</h2>
-            <h3>Laravel 12 • React 19 • Inertia.js • PostgreSQL</h3>
-            <hr style="border: 1px solid white; width: 100%" />
+            <article class="card" id="auto-save-feedback">
+              <div class="card-head">
+                <img class="card-icon" src="/images/projects/auto-save.png" alt="AutoSave Feedback Pro logo" width="128" height="128" loading="lazy" decoding="async" />
+                <h3>AutoSave Feedback Pro</h3>
+              </div>
+              <p class="card-desc">
+                A professional, modular feedback system for modern web
+                applications, with animations, multiple themes and powerful
+                configuration options.
+              </p>
+              <ul class="tags" aria-label="Technologies">
+                <li>HTML5</li><li>CSS3</li><li>JavaScript</li>
+              </ul>
+              <div class="card-actions">
+                <a class="btn btn-sm" href="https://abdullah-ayyash.github.io/auto-save-feedback/demo/" target="_blank" rel="noopener noreferrer">Demo<span class="sr-only"> of AutoSave Feedback Pro (opens in a new tab)</span><svg class="icon" aria-hidden="true" focusable="false"><use href="/icons.svg#i-external"></use></svg></a>
+                <a class="btn btn-sm btn-quiet" href="https://github.com/abdullah-ayyash/auto-save-feedback" target="_blank" rel="noopener noreferrer">Source<span class="sr-only"> code of AutoSave Feedback Pro (opens in a new tab)</span><svg class="icon" aria-hidden="true" focusable="false"><use href="/icons.svg#i-github"></use></svg></a>
+              </div>
+            </article>
 
-            <p>
-              A powerful lead management and performance optimization platform
-              designed for multi-site pipeline tracking. Features include a
-              dynamic valuation engine, detailed attribution, and real-time
-              performance analytics to streamline conversion workflows.
-            </p>
+            <article class="card" id="robust-toast-notifications">
+              <div class="card-head">
+                <img class="card-icon" src="/images/robust-toast-notifications.png" alt="Rocket icon for the Robust Toast Notifications library" width="128" height="128" loading="lazy" decoding="async" />
+                <h3>Robust Toast Notifications</h3>
+              </div>
+              <p class="card-desc">
+                A production-ready notification system that works in real
+                applications. It has bulletproof validation, smart duplicate
+                prevention, automatic cleanup and comprehensive error
+                reporting.
+              </p>
+              <ul class="tags" aria-label="Technologies">
+                <li>HTML5</li><li>CSS3</li><li>JavaScript</li><li>Bootstrap 5.3</li>
+              </ul>
+              <div class="card-actions">
+                <a class="btn btn-sm" href="https://abdullah-ayyash.github.io/robust-toast-notifications/" target="_blank" rel="noopener noreferrer">Demo<span class="sr-only"> of Robust Toast Notifications (opens in a new tab)</span><svg class="icon" aria-hidden="true" focusable="false"><use href="/icons.svg#i-external"></use></svg></a>
+                <a class="btn btn-sm btn-quiet" href="https://github.com/abdullah-ayyash/robust-toast-notifications" target="_blank" rel="noopener noreferrer">Source<span class="sr-only"> code of Robust Toast Notifications (opens in a new tab)</span><svg class="icon" aria-hidden="true" focusable="false"><use href="/icons.svg#i-github"></use></svg></a>
+              </div>
+            </article>
 
-            <a href="http://swiftlead.app/" target="_blank">
-              <button>Live Demo</button>
-            </a>
-          </article>
+            <article class="card" id="shopnex">
+              <div class="card-head">
+                <img class="card-icon" src="/images/shop-nex.png" alt="ShopNex logo: a shopping cart on a monitor" width="128" height="128" loading="lazy" decoding="async" />
+                <h3>ShopNex: next-gen online store</h3>
+              </div>
+              <p class="card-desc">
+                A state-of-the-art online store web application, designed to
+                deliver an exceptional shopping experience for customers.
+              </p>
+              <ul class="tags" aria-label="Technologies">
+                <li>PostgreSQL</li><li>Express</li><li>React</li><li>Node.js</li>
+              </ul>
+              <div class="card-actions">
+                <a class="btn btn-sm btn-quiet" href="https://github.com/abdullah-ayyash/eShopify-Online-Store" target="_blank" rel="noopener noreferrer">Source<span class="sr-only"> code of ShopNex (opens in a new tab)</span><svg class="icon" aria-hidden="true" focusable="false"><use href="/icons.svg#i-github"></use></svg></a>
+              </div>
+            </article>
 
-          <article>
-            <img
-              src="./images/projects/auto-save.png"
-              alt="AutoSave Feedback Pro"
-            />
-            <h2>
-              A professional, modular feedback system for modern web
-              applications
-            </h2>
-            <h3>Stack: (HTML5, CSS3, Javascript)</h3>
-            <hr style="border: 1px solid white; width: 100%" />
-            <p>
-              A professional, modular feedback system for modern web
-              applications with beautiful animations, multiple themes, and
-              powerful configuration options.
-            </p>
-            <a
-              href="https://abdullah-ayyash.github.io/auto-save-feedback/demo/"
-              target="_blank"
-            >
-              <button>Demo</button>
-            </a>
-            <a
-              href="https://github.com/abdullah-ayyash/auto-save-feedback"
-              target="_blank"
-            >
-              <button>Repo</button>
-            </a>
-          </article>
+            <article class="card" id="jammming">
+              <div class="card-head">
+                <img class="card-icon" src="/images/spotify.png" alt="Spotify logo" width="128" height="128" loading="lazy" decoding="async" />
+                <h3>Jammming: Spotify playlist builder</h3>
+              </div>
+              <p class="card-desc">
+                A React app that lets users search the Spotify library, create
+                a custom playlist and save it to their Spotify account.
+              </p>
+              <ul class="tags" aria-label="Technologies">
+                <li>React</li><li>REST API</li>
+              </ul>
+              <div class="card-actions">
+                <a class="btn btn-sm" href="https://spotify-cc.surge.sh/" target="_blank" rel="noopener noreferrer">Demo<span class="sr-only"> of Jammming (opens in a new tab)</span><svg class="icon" aria-hidden="true" focusable="false"><use href="/icons.svg#i-external"></use></svg></a>
+                <a class="btn btn-sm btn-quiet" href="https://github.com/abdullah-ayyash/jamming-spotify-api" target="_blank" rel="noopener noreferrer">Source<span class="sr-only"> code of Jammming (opens in a new tab)</span><svg class="icon" aria-hidden="true" focusable="false"><use href="/icons.svg#i-github"></use></svg></a>
+              </div>
+            </article>
 
-          <article>
-            <img
-              src="./images/robust-toast-notifications.png"
-              alt="Robust Toast Notifications"
-            />
-            <h2>Robust Toast Notifications System</h2>
-            <h3>Stack: (HTML5, CSS3, Javascript, Bootstrap 5.3)</h3>
-            <hr style="border: 1px solid white; width: 100%" />
-            <p>
-              A production-ready notification system that actually works in real
-              applications. Built with bulletproof validation, smart duplicate
-              prevention, automatic cleanup, and comprehensive error reporting.
-            </p>
-            <a
-              href="https://abdullah-ayyash.github.io/robust-toast-notifications/"
-              target="_blank"
-            >
-              <button>Demo</button>
-            </a>
-            <a
-              href="https://github.com/abdullah-ayyash/robust-toast-notifications"
-              target="_blank"
-            >
-              <button>Repo</button>
-            </a>
-          </article>
+            <article class="card" id="chess-club-website">
+              <div class="card-head">
+                <img class="card-icon" src="/images/chess.png" alt="Chess pieces icon" width="128" height="128" loading="lazy" decoding="async" />
+                <h3>Responsive Chess Club Website</h3>
+              </div>
+              <p class="card-desc">
+                A static, responsive design for a chess club website where
+                players of all ages and skill levels come together to enjoy
+                the game of kings.
+              </p>
+              <ul class="tags" aria-label="Technologies">
+                <li>HTML</li><li>CSS</li>
+              </ul>
+              <div class="card-actions">
+                <a class="btn btn-sm" href="https://abdullah-ayyash.github.io/responsive-club-website/" target="_blank" rel="noopener noreferrer">Demo<span class="sr-only"> of the Chess Club Website (opens in a new tab)</span><svg class="icon" aria-hidden="true" focusable="false"><use href="/icons.svg#i-external"></use></svg></a>
+                <a class="btn btn-sm btn-quiet" href="https://github.com/abdullah-ayyash/responsive-club-website" target="_blank" rel="noopener noreferrer">Source<span class="sr-only"> code of the Chess Club Website (opens in a new tab)</span><svg class="icon" aria-hidden="true" focusable="false"><use href="/icons.svg#i-github"></use></svg></a>
+              </div>
+            </article>
 
-          <article>
-            <img src="./images/shop-nex.png" alt="ShopNex Project" />
-            <h2>ShopNex - Your Next-Gen Online Store</h2>
-            <h3>PERN Stack (Postgres, Express, React, Node)</h3>
-            <hr style="border: 1px solid white; width: 100%" />
-            <p>
-              ShopNex is a state-of-the-art online store web application,
-              designed to deliver an exceptional shopping experience for
-              customers.
-            </p>
-            <a
-              href="https://github.com/abdullah-ayyash/eShopify-Online-Store"
-              target="_blank"
-            >
-              <button>Repo</button>
-            </a>
-          </article>
+            <article class="card" id="b-choice-website">
+              <div class="card-head">
+                <img class="card-icon" src="/images/cooperation.png" alt="Handshake icon" width="128" height="128" loading="lazy" decoding="async" />
+                <h3>B-Choice App Business Website</h3>
+              </div>
+              <p class="card-desc">
+                A simple, modern business website for a mobile app that offers
+                alternatives to popular phone apps.
+              </p>
+              <ul class="tags" aria-label="Technologies">
+                <li>HTML</li><li>CSS</li>
+              </ul>
+              <div class="card-actions">
+                <a class="btn btn-sm" href="https://abdullah-ayyash.github.io/flexbox-business-site-starting/" target="_blank" rel="noopener noreferrer">Demo<span class="sr-only"> of the B-Choice website (opens in a new tab)</span><svg class="icon" aria-hidden="true" focusable="false"><use href="/icons.svg#i-external"></use></svg></a>
+                <a class="btn btn-sm btn-quiet" href="https://github.com/abdullah-ayyash/flexbox-business-site-starting" target="_blank" rel="noopener noreferrer">Source<span class="sr-only"> code of the B-Choice website (opens in a new tab)</span><svg class="icon" aria-hidden="true" focusable="false"><use href="/icons.svg#i-github"></use></svg></a>
+              </div>
+            </article>
 
-          <article>
-            <img src="./images/spotify.png" alt="Spotify Project" />
-            <h2>Jammming - Spotify API</h2>
-            <h3>React.js, RESTful API</h3>
-            <hr style="border: 1px solid white; width: 100%" />
-            <p>
-              This React app allows users to search the Spotify library, create
-              a custom playlist, then save it to their Spotify account.
-            </p>
-            <a href="https://spotify-cc.surge.sh/" target="_blank">
-              <button>Demo</button>
-            </a>
-            <a
-              href="https://github.com/abdullah-ayyash/jamming-spotify-api"
-              target="_blank"
-            >
-              <button>Repo</button>
-            </a>
-          </article>
+            <article class="card" id="credit-card-checker">
+              <div class="card-head">
+                <img class="card-icon" src="/images/credit-card.png" alt="Credit card icon" width="128" height="128" loading="lazy" decoding="async" />
+                <h3>Credit Card Checker</h3>
+              </div>
+              <p class="card-desc">
+                A JavaScript credit card checker that validates card numbers
+                with the Luhn algorithm.
+              </p>
+              <ul class="tags" aria-label="Technologies">
+                <li>JavaScript</li>
+              </ul>
+              <div class="card-actions">
+                <a class="btn btn-sm btn-quiet" href="https://github.com/abdullah-ayyash/credit-card-checker" target="_blank" rel="noopener noreferrer">Source<span class="sr-only"> code of Credit Card Checker (opens in a new tab)</span><svg class="icon" aria-hidden="true" focusable="false"><use href="/icons.svg#i-github"></use></svg></a>
+              </div>
+            </article>
 
-          <article>
-            <img src="./images/chess.png" alt="Chess Project" />
-            <h2>Responsive Chess Club Website</h2>
-            <h3>HTML,CSS</h3>
-            <hr style="border: 1px solid white; width: 100%" />
-            <p>
-              A static HTML,CSS design for a Chess Club Website where chess
-              enthusiasts of all ages and skill levels come together to enjoy
-              the game of kings.
-            </p>
-            <a
-              href="https://abdullah-ayyash.github.io/responsive-club-website/"
-              target="_blank"
-            >
-              <button>Demo</button>
-            </a>
-            <a
-              href="https://github.com/abdullah-ayyash/responsive-club-website"
-              target="_blank"
-            >
-              <button>Repo</button>
-            </a>
-          </article>
+            <article class="card" id="dna-simulation">
+              <div class="card-head">
+                <img class="card-icon" src="/images/dna.png" alt="DNA helix icon" width="128" height="128" loading="lazy" decoding="async" />
+                <h3>DNA Simulation</h3>
+              </div>
+              <p class="card-desc">
+                A simulation of the DNA and mutation speed of a living system
+                (Pila-Aequor-Organism) using JavaScript objects.
+              </p>
+              <ul class="tags" aria-label="Technologies">
+                <li>JavaScript</li>
+              </ul>
+              <div class="card-actions">
+                <a class="btn btn-sm btn-quiet" href="https://github.com/abdullah-ayyash/Pila-Aequor-Organism" target="_blank" rel="noopener noreferrer">Source<span class="sr-only"> code of DNA Simulation (opens in a new tab)</span><svg class="icon" aria-hidden="true" focusable="false"><use href="/icons.svg#i-github"></use></svg></a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
 
-          <article>
-            <img src="./images/cooperation.png" alt="B-Choice Project" />
-            <h2>B-Choice App - Business Website</h2>
-            <h3>HTML,CSS</h3>
-            <hr style="border: 1px solid white; width: 100%" />
-            <p>
-              Simple and modern Business Website design for a mobile app that
-              provides alternative app choices of popular phone apps.
-            </p>
-            <a
-              href="https://abdullah-ayyash.github.io/flexbox-business-site-starting/"
-              target="_blank"
-            >
-              <button>Demo</button>
-            </a>
-            <a
-              href="https://github.com/abdullah-ayyash/flexbox-business-site-starting"
-              target="_blank"
-            >
-              <button>Repo</button>
-            </a>
-          </article>
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <nav aria-label="Footer">
+          <ul class="footer-nav">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="/contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <ul class="footer-social" aria-label="Social links">
+          <li><a href="https://www.linkedin.com/in/abdullah-ayyash/" target="_blank" rel="me noopener noreferrer" aria-label="LinkedIn (opens in a new tab)"><svg class="icon" aria-hidden="true" focusable="false"><use href="/icons.svg#i-linkedin"></use></svg></a></li>
+          <li><a href="https://github.com/abdullah-ayyash" target="_blank" rel="me noopener noreferrer" aria-label="GitHub (opens in a new tab)"><svg class="icon" aria-hidden="true" focusable="false"><use href="/icons.svg#i-github"></use></svg></a></li>
+          <li><a href="https://codepen.io/abdullahayyash" target="_blank" rel="me noopener noreferrer" aria-label="CodePen (opens in a new tab)"><svg class="icon" aria-hidden="true" focusable="false"><use href="/icons.svg#i-codepen"></use></svg></a></li>
+        </ul>
+        <p class="footer-copy">&copy; <span id="year">2026</span> Abdullah Ayyash. Built with HTML, CSS and JavaScript.</p>
+      </div>
+    </footer>
 
-          <article>
-            <img src="./images/credit-card.png" alt="Credit Card Project" />
-            <h2>Credit Card Checker</h2>
-            <h3>Javascript</h3>
-            <hr style="border: 1px solid white; width: 100%" />
-            <p>
-              A Simple Javascript credit card checker that validates card
-              numbers using the Luhn algorithm.
-            </p>
-            <a
-              href="https://github.com/abdullah-ayyash/credit-card-checker"
-              target="_blank"
-            >
-              <button>Repo</button>
-            </a>
-          </article>
-
-          <article>
-            <img src="./images/dna.png" alt="DNA Project" />
-            <h2>DNA Simulation</h2>
-            <h3>Javascript</h3>
-            <hr style="border: 1px solid white; width: 100%" />
-            <p>
-              Simulating the DNA and mutation speed of a living system
-              (Pila-Aequor-Organism) using javascript objects
-            </p>
-            <a
-              href="https://github.com/abdullah-ayyash/Pila-Aequor-Organism"
-              target="_blank"
-            >
-              <button>Repo</button>
-            </a>
-          </article>
-        </section>
-      </main>
-    </section>
-
-    <script src="./index.js"></script>
+    <script src="/site.js" defer></script>
   </body>
 </html>

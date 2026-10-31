@@ -1,0 +1,38 @@
+# Abdullah Ayyash
+
+> Abdullah Ayyash is a full stack developer who builds web apps with JavaScript, React, Node.js, Express.js and Laravel. This site is his portfolio: skills, projects and a contact form.
+
+Canonical site: https://abdullahayyash.ca/
+
+Skills:
+- Frontend: React, JavaScript, HTML5, CSS3
+- Backend: Node.js, Express.js, Laravel, PHP, PostgreSQL, MongoDB
+- Tools and technologies: Git, GitHub, Docker, REST APIs, command line
+
+## Main pages
+
+- [Home](https://abdullahayyash.ca/): Introduction, technical skills and all projects
+- [Contact](https://abdullahayyash.ca/contact.html): Contact form for web app, website or API project enquiries
+
+## Featured projects
+
+- [Prime Takeoffs](https://stage.primetakeoffs.com/): Construction takeoff and estimation platform for linear and area measurements on blueprint PDFs. Built with Laravel, React, PHP, Docker and Python.
+- [SwiftLead](https://swiftlead.app/): Lead management and performance optimization platform for multi-site pipeline tracking. Built with Laravel 12, React 19, Inertia.js and PostgreSQL.
+
+## Open-source and practice projects
+
+- [AutoSave Feedback Pro](https://abdullah-ayyash.github.io/auto-save-feedback/demo/): Modular feedback system for web applications (HTML5, CSS3, JavaScript). Source: https://github.com/abdullah-ayyash/auto-save-feedback
+- [Robust Toast Notifications](https://abdullah-ayyash.github.io/robust-toast-notifications/): Production-ready notification system with validation, duplicate prevention and automatic cleanup (HTML5, CSS3, JavaScript, Bootstrap 5.3). Source: https://github.com/abdullah-ayyash/robust-toast-notifications
+- [ShopNex](https://github.com/abdullah-ayyash/eShopify-Online-Store): Online store web application built with the PERN stack (PostgreSQL, Express, React, Node.js).
+- [Jammming](https://spotify-cc.surge.sh/): React app that searches the Spotify library and saves custom playlists to a Spotify account. Source: https://github.com/abdullah-ayyash/jamming-spotify-api
+- [Responsive Chess Club Website](https://abdullah-ayyash.github.io/responsive-club-website/): Static, responsive HTML and CSS website for a chess club. Source: https://github.com/abdullah-ayyash/responsive-club-website
+- [B-Choice App Business Website](https://abdullah-ayyash.github.io/flexbox-business-site-starting/): Business website for a mobile app that offers alternatives to popular phone apps (HTML, CSS). Source: https://github.com/abdullah-ayyash/flexbox-business-site-starting
+- [Credit Card Checker](https://github.com/abdullah-ayyash/credit-card-checker): JavaScript credit card validator using the Luhn algorithm.
+- [DNA Simulation](https://github.com/abdullah-ayyash/Pila-Aequor-Organism): JavaScript simulation of DNA and mutation speed in a living system.
+
+## Profiles
+
+- [GitHub](https://github.com/abdullah-ayyash): Source code for open-source and practice projects
+- [LinkedIn](https://www.linkedin.com/in/abdullah-ayyash/): Professional profile
+- [CodePen](https://codepen.io/abdullahayyash): Front-end experiments
+- [Resume](https://drive.google.com/file/d/1QrG24LhVQwEtEmXhtXAAJF0GCHxrVuQB/view?usp=drive_link): Resume (Google Drive)

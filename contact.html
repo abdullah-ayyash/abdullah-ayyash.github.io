@@ -1,200 +1,310 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contact - Abdullah Ayyash</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Contact Abdullah Ayyash | Full Stack Developer</title>
+    <meta
+      name="description"
+      content="Get in touch with Abdullah Ayyash to discuss your web app, website or API project. Send a message and get a reply by email."
+    />
+    <link rel="canonical" href="https://abdullahayyash.ca/contact.html" />
+    <meta
+      name="robots"
+      content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+    />
+    <meta name="author" content="Abdullah Ayyash" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+
+    <!-- Browser UI -->
+    <meta name="theme-color" content="#0a0a0a" />
+    <meta name="color-scheme" content="dark" />
+    <meta name="application-name" content="Abdullah Ayyash" />
+    <meta name="apple-mobile-web-app-title" content="Abdullah" />
+
+    <!-- Icons -->
+    <link rel="icon" href="/favicon.ico" sizes="48x48" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Abdullah Ayyash" />
+    <meta property="og:title" content="Contact Abdullah Ayyash" />
+    <meta
+      property="og:description"
+      content="Have a web app, website or API in mind? Send Abdullah Ayyash a message and get a reply by email."
+    />
+    <meta property="og:url" content="https://abdullahayyash.ca/contact.html" />
+    <meta property="og:image" content="https://abdullahayyash.ca/og-image.png" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta
+      property="og:image:alt"
+      content="Abdullah Ayyash, Full Stack Developer. React, Node.js, Express and Laravel."
+    />
+
+    <!-- Twitter / X -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Contact Abdullah Ayyash" />
+    <meta
+      name="twitter:description"
+      content="Have a web app, website or API in mind? Send Abdullah Ayyash a message and get a reply by email."
+    />
+    <meta name="twitter:image" content="https://abdullahayyash.ca/og-image.png" />
+    <meta
+      name="twitter:image:alt"
+      content="Abdullah Ayyash, Full Stack Developer. React, Node.js, Express and Laravel."
+    />
+
+    <!-- Fonts and styles -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@600&display=swap"
       rel="stylesheet"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    />
-    <link rel="stylesheet" href="./contact.css" />
-  </head>
-  <body>
-    <!-- Background Animation -->
-    <div class="bg-animation"></div>
-    <div class="floating-shapes">
-      <div
-        class="shape"
-        style="width: 20px; height: 20px; left: 10%; animation-delay: 0s"
-      ></div>
-      <div
-        class="shape"
-        style="width: 15px; height: 15px; left: 20%; animation-delay: 5s"
-      ></div>
-      <div
-        class="shape"
-        style="width: 25px; height: 25px; left: 30%; animation-delay: 10s"
-      ></div>
-      <div
-        class="shape"
-        style="width: 18px; height: 18px; left: 40%; animation-delay: 15s"
-      ></div>
-      <div
-        class="shape"
-        style="width: 22px; height: 22px; left: 50%; animation-delay: 3s"
-      ></div>
-      <div
-        class="shape"
-        style="width: 16px; height: 16px; left: 60%; animation-delay: 8s"
-      ></div>
-      <div
-        class="shape"
-        style="width: 30px; height: 30px; left: 70%; animation-delay: 12s"
-      ></div>
-      <div
-        class="shape"
-        style="width: 14px; height: 14px; left: 80%; animation-delay: 7s"
-      ></div>
-      <div
-        class="shape"
-        style="width: 26px; height: 26px; left: 90%; animation-delay: 14s"
-      ></div>
-    </div>
+    <link rel="stylesheet" href="/styles.css" />
 
-    <!-- Header -->
-    <header>
-      <div class="header-container">
-        <a href="/" class="logo">Abdullah</a>
-        <nav>
-          <ul>
-            <li><a href="/">About</a></li>
-            <li><a href="/#projects">Projects</a></li>
-            <li><a href="/contact.html" class="active">Contact</a></li>
+    <!-- Structured data -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "WebSite",
+            "@id": "https://abdullahayyash.ca/#website",
+            "url": "https://abdullahayyash.ca/",
+            "name": "Abdullah Ayyash",
+            "inLanguage": "en",
+            "publisher": { "@id": "https://abdullahayyash.ca/#person" }
+          },
+          {
+            "@type": "Person",
+            "@id": "https://abdullahayyash.ca/#person",
+            "name": "Abdullah Ayyash",
+            "url": "https://abdullahayyash.ca/",
+            "jobTitle": "Full Stack Developer",
+            "sameAs": [
+              "https://www.linkedin.com/in/abdullah-ayyash/",
+              "https://github.com/abdullah-ayyash",
+              "https://codepen.io/abdullahayyash"
+            ]
+          },
+          {
+            "@type": "ContactPage",
+            "@id": "https://abdullahayyash.ca/contact.html#webpage",
+            "url": "https://abdullahayyash.ca/contact.html",
+            "name": "Contact Abdullah Ayyash",
+            "isPartOf": { "@id": "https://abdullahayyash.ca/#website" },
+            "about": { "@id": "https://abdullahayyash.ca/#person" },
+            "breadcrumb": { "@id": "https://abdullahayyash.ca/contact.html#breadcrumb" },
+            "dateModified": "2026-10-30",
+            "inLanguage": "en"
+          },
+          {
+            "@type": "BreadcrumbList",
+            "@id": "https://abdullahayyash.ca/contact.html#breadcrumb",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://abdullahayyash.ca/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Contact",
+                "item": "https://abdullahayyash.ca/contact.html"
+              }
+            ]
+          }
+        ]
+      }
+    </script>
+  </head>
+
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <div class="bg-glow" aria-hidden="true"></div>
+    <div class="fireflies" aria-hidden="true"></div>
+
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="logo" href="/" aria-label="Abdullah Ayyash, home">Abdullah</a>
+
+        <nav aria-label="Primary">
+          <ul class="nav-list">
+            <li><a href="/#about">About</a></li>
             <li><a href="/#skills">Skills</a></li>
+            <li><a href="/#projects">Projects</a></li>
+            <li><a href="/contact.html" aria-current="page">Contact</a></li>
             <li>
               <a
+                class="btn btn-sm"
                 href="https://drive.google.com/file/d/1QrG24LhVQwEtEmXhtXAAJF0GCHxrVuQB/view?usp=drive_link"
-                class="resume-btn"
                 target="_blank"
-                >Resume</a
+                rel="noopener noreferrer"
+                >Resume<span class="sr-only"> (opens in a new tab)</span></a
               >
             </li>
           </ul>
         </nav>
-        <button class="mobile-menu-btn" id="mobileMenuBtn">
-          <i class="fas fa-bars"></i>
+
+        <button
+          class="menu-btn"
+          id="menu-btn"
+          type="button"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+          aria-label="Open menu"
+        >
+          <svg class="icon icon-open" aria-hidden="true" focusable="false"><use href="/icons.svg#i-menu"></use></svg>
+          <svg class="icon icon-close" aria-hidden="true" focusable="false"><use href="/icons.svg#i-close"></use></svg>
         </button>
-      </div>
-      <div class="mobile-menu" id="mobileMenu">
-        <ul>
-          <li><a href="/" class="mobile-link">About</a></li>
-          <li><a href="/#projects" class="mobile-link">Projects</a></li>
-          <li>
-            <a href="/contact.html" class="mobile-link active">Contact</a>
-          </li>
-          <li><a href="#skills" class="mobile-link">Skills</a></li>
-          <li>
-            <a
-              href="https://drive.google.com/file/d/1QrG24LhVQwEtEmXhtXAAJF0GCHxrVuQB/view?usp=drive_link"
-              class="mobile-link"
-              target="_blank"
-              >Resume</a
-            >
-          </li>
-        </ul>
       </div>
     </header>
 
-    <section id="contact-section">
-      <!-- Left Sidebar with Social Links -->
-      <aside id="aside-left">
-        <ul>
-          <li>
-            <a
-              href="https://www.linkedin.com/in/abdullah-ayyash/"
-              target="_blank"
-            >
-              <i class="fab fa-linkedin-in"></i>
-            </a>
-          </li>
-          <li>
-            <a href="https://github.com/abdullah-ayyash" target="_blank">
-              <i class="fab fa-github"></i>
-            </a>
-          </li>
-          <li>
-            <a href="https://codepen.io/abdullahayyash" target="_blank">
-              <i class="fab fa-codepen"></i>
-            </a>
-          </li>
-        </ul>
-      </aside>
+    <nav class="mobile-menu" id="mobile-menu" aria-label="Mobile">
+      <ul>
+        <li><a href="/#about">About</a></li>
+        <li><a href="/#skills">Skills</a></li>
+        <li><a href="/#projects">Projects</a></li>
+        <li><a href="/contact.html" aria-current="page">Contact</a></li>
+        <li>
+          <a
+            href="https://drive.google.com/file/d/1QrG24LhVQwEtEmXhtXAAJF0GCHxrVuQB/view?usp=drive_link"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Resume<span class="sr-only"> (opens in a new tab)</span></a
+          >
+        </li>
+      </ul>
+    </nav>
 
-      <main>
-        <div class="contact-header">
-          <h1 id="contact-h1">Let's Build Something Great Together!</h1>
-          <h2>Contact me and let's make your web dreams a reality.</h2>
+    <ul class="social-rail" aria-label="Social links">
+      <li>
+        <a href="https://www.linkedin.com/in/abdullah-ayyash/" target="_blank" rel="me noopener noreferrer" aria-label="LinkedIn (opens in a new tab)">
+          <svg class="icon" aria-hidden="true" focusable="false"><use href="/icons.svg#i-linkedin"></use></svg>
+        </a>
+      </li>
+      <li>
+        <a href="https://github.com/abdullah-ayyash" target="_blank" rel="me noopener noreferrer" aria-label="GitHub (opens in a new tab)">
+          <svg class="icon" aria-hidden="true" focusable="false"><use href="/icons.svg#i-github"></use></svg>
+        </a>
+      </li>
+      <li>
+        <a href="https://codepen.io/abdullahayyash" target="_blank" rel="me noopener noreferrer" aria-label="CodePen (opens in a new tab)">
+          <svg class="icon" aria-hidden="true" focusable="false"><use href="/icons.svg#i-codepen"></use></svg>
+        </a>
+      </li>
+    </ul>
+
+    <main id="main">
+      <div class="container contact">
+        <div class="contact-intro">
+          <h1>Let's build something great together</h1>
+          <p>
+            Tell me about your project: a new web app, a website redesign or an
+            API. Send the details and I'll reply by email.
+          </p>
+          <ul class="contact-links">
+            <li>
+              <a href="https://www.linkedin.com/in/abdullah-ayyash/" target="_blank" rel="me noopener noreferrer">
+                <svg class="icon" aria-hidden="true" focusable="false"><use href="/icons.svg#i-linkedin"></use></svg>
+                LinkedIn<span class="sr-only"> (opens in a new tab)</span>
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/abdullah-ayyash" target="_blank" rel="me noopener noreferrer">
+                <svg class="icon" aria-hidden="true" focusable="false"><use href="/icons.svg#i-github"></use></svg>
+                GitHub<span class="sr-only"> (opens in a new tab)</span>
+              </a>
+            </li>
+            <li>
+              <a href="https://drive.google.com/file/d/1QrG24LhVQwEtEmXhtXAAJF0GCHxrVuQB/view?usp=drive_link" target="_blank" rel="noopener noreferrer">
+                <svg class="icon" aria-hidden="true" focusable="false"><use href="/icons.svg#i-file"></use></svg>
+                Resume<span class="sr-only"> (opens in a new tab)</span>
+              </a>
+            </li>
+          </ul>
         </div>
 
-        <form
-          class="contact-form"
-          action="https://formspree.io/f/xpqbwddp"
-          method="POST"
-        >
-          <div class="form-row">
-            <div class="form-group">
-              <label for="first-name">First Name</label>
-              <input
-                type="text"
-                id="first-name"
-                name="fname"
-                class="inputs-field"
-                required
-              />
+        <div class="form-card">
+          <form
+            id="contact-form"
+            action="https://formspree.io/f/xpqbwddp"
+            method="POST"
+          >
+            <div class="form-row">
+              <div class="field">
+                <label for="first-name">First name</label>
+                <input type="text" id="first-name" name="fname" autocomplete="given-name" required />
+              </div>
+              <div class="field">
+                <label for="last-name">Last name</label>
+                <input type="text" id="last-name" name="lname" autocomplete="family-name" required />
+              </div>
             </div>
-            <div class="form-group">
-              <label for="last-name">Last Name</label>
-              <input
-                type="text"
-                id="last-name"
-                name="lname"
-                class="inputs-field"
-                required
-              />
+
+            <div class="field">
+              <label for="email">Email address</label>
+              <input type="email" id="email" name="email" autocomplete="email" inputmode="email" required />
             </div>
-          </div>
 
-          <div class="form-group">
-            <label for="email">Email Address</label>
-            <input
-              type="email"
-              id="email"
-              name="email"
-              class="inputs-field"
-              required
-            />
-          </div>
+            <div class="field">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" placeholder="Tell me about your project..." required></textarea>
+            </div>
 
-          <div class="form-group">
-            <label for="message">Message</label>
-            <textarea
-              id="message"
-              name="message"
-              class="inputs-field"
-              placeholder="Tell me about your project..."
-              required
-            ></textarea>
-          </div>
+            <input type="hidden" name="_subject" value="New message from abdullahayyash.ca" />
+            <div class="hp" aria-hidden="true">
+              <label>Leave this field empty<input type="text" name="_gotcha" tabindex="-1" autocomplete="off" /></label>
+            </div>
 
-          <button type="submit" class="send-btn" id="send-btn">
-            <i class="fas fa-paper-plane"></i> Send Message
-          </button>
+            <button type="submit" class="btn btn-primary" id="send-btn">
+              <svg class="icon" aria-hidden="true" focusable="false"><use href="/icons.svg#i-send"></use></svg>
+              <span class="btn-label">Send message</span>
+            </button>
 
-          <div class="success-message" id="successMessage">
-            <i class="fas fa-check-circle"></i> Message sent successfully! I'll
-            get back to you soon.
-          </div>
-        </form>
-      </main>
-    </section>
+            <div class="form-status is-success" id="form-success" role="status" hidden>
+              <svg class="icon" aria-hidden="true" focusable="false"><use href="/icons.svg#i-check"></use></svg>
+              <span class="status-text">Message sent. I'll reply by email soon.</span>
+            </div>
+            <div class="form-status is-error" id="form-error" role="alert" hidden>
+              <svg class="icon" aria-hidden="true" focusable="false"><use href="/icons.svg#i-alert"></use></svg>
+              <span class="status-text">The message could not be sent. Try again, or message me on LinkedIn.</span>
+            </div>
+          </form>
+        </div>
+      </div>
+    </main>
 
-    <script src="./contact.js"></script>
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <nav aria-label="Footer">
+          <ul class="footer-nav">
+            <li><a href="/#about">About</a></li>
+            <li><a href="/#skills">Skills</a></li>
+            <li><a href="/#projects">Projects</a></li>
+            <li><a href="/contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <ul class="footer-social" aria-label="Social links">
+          <li><a href="https://www.linkedin.com/in/abdullah-ayyash/" target="_blank" rel="me noopener noreferrer" aria-label="LinkedIn (opens in a new tab)"><svg class="icon" aria-hidden="true" focusable="false"><use href="/icons.svg#i-linkedin"></use></svg></a></li>
+          <li><a href="https://github.com/abdullah-ayyash" target="_blank" rel="me noopener noreferrer" aria-label="GitHub (opens in a new tab)"><svg class="icon" aria-hidden="true" focusable="false"><use href="/icons.svg#i-github"></use></svg></a></li>
+          <li><a href="https://codepen.io/abdullahayyash" target="_blank" rel="me noopener noreferrer" aria-label="CodePen (opens in a new tab)"><svg class="icon" aria-hidden="true" focusable="false"><use href="/icons.svg#i-codepen"></use></svg></a></li>
+        </ul>
+        <p class="footer-copy">&copy; <span id="year">2026</span> Abdullah Ayyash. Built with HTML, CSS and JavaScript.</p>
+      </div>
+    </footer>
+
+    <script src="/site.js" defer></script>
+    <script src="/contact.js" defer></script>
   </body>
 </html>

@@ -12,12 +12,35 @@
   const failure = document.getElementById("form-error");
   const failureText = failure.querySelector(".status-text");
 
+  // Spam protection (no third-party service needed):
+  //  1. Honeypot fields: people never see them, bots fill them in.
+  //  2. Time trap: a human needs a few seconds to fill in the form, a bot does not.
+  const MIN_FILL_MS = 3000;
+  const loadedAt = Date.now();
+  const honeypots = form.querySelectorAll('input[name="_gotcha"], input[name="homepage"]');
+
   const DEFAULT_ERROR =
     "The message could not be sent. Try again, or message me on LinkedIn.";
 
   form.addEventListener("submit", async (e) => {
     e.preventDefault();
     if (!form.reportValidity()) return;
+
+    // Honeypot filled in: pretend it worked so the bot moves on, but send nothing.
+    if (Array.from(honeypots).some((field) => field.value.trim() !== "")) {
+      form.reset();
+      failure.hidden = true;
+      success.hidden = false;
+      return;
+    }
+
+    // Submitted faster than a person could fill it in: ask them to try again.
+    if (Date.now() - loadedAt < MIN_FILL_MS) {
+      failureText.textContent = "That was quick! Please wait a moment and press send again.";
+      failure.hidden = false;
+      success.hidden = true;
+      return;
+    }
 
     success.hidden = true;
     failure.hidden = true;

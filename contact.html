@@ -244,27 +244,31 @@
             <div class="form-row">
               <div class="field">
                 <label for="first-name">First name</label>
-                <input type="text" id="first-name" name="fname" autocomplete="given-name" required />
+                <input type="text" id="first-name" name="fname" autocomplete="given-name" maxlength="80" required />
               </div>
               <div class="field">
                 <label for="last-name">Last name</label>
-                <input type="text" id="last-name" name="lname" autocomplete="family-name" required />
+                <input type="text" id="last-name" name="lname" autocomplete="family-name" maxlength="80" required />
               </div>
             </div>
 
             <div class="field">
               <label for="email">Email address</label>
-              <input type="email" id="email" name="email" autocomplete="email" inputmode="email" required />
+              <input type="email" id="email" name="email" autocomplete="email" inputmode="email" maxlength="254" required />
             </div>
 
             <div class="field">
               <label for="message">Message</label>
-              <textarea id="message" name="message" placeholder="Tell me about your project..." required></textarea>
+              <textarea id="message" name="message" placeholder="Tell me about your project..." maxlength="5000" required></textarea>
             </div>
 
             <input type="hidden" name="_subject" value="New message from abdullahayyash.ca" />
+
+            <!-- Spam traps: hidden from people and assistive tech. Bots fill them in.
+                 "_gotcha" is Formspree's own server-side honeypot; "homepage" is checked in contact.js. -->
             <div class="hp" aria-hidden="true">
               <label>Leave this field empty<input type="text" name="_gotcha" tabindex="-1" autocomplete="off" /></label>
+              <label>Homepage<input type="text" id="homepage" name="homepage" tabindex="-1" autocomplete="off" data-lpignore="true" data-1p-ignore /></label>
             </div>
 
             <button type="submit" class="btn btn-primary" id="send-btn">

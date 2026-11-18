@@ -25,9 +25,9 @@ Skills:
 - [Robust Toast Notifications](https://abdullah-ayyash.github.io/robust-toast-notifications/): Production-ready notification system with validation, duplicate prevention and automatic cleanup (HTML5, CSS3, JavaScript, Bootstrap 5.3). Source: https://github.com/abdullah-ayyash/robust-toast-notifications
 - [ShopNex](https://github.com/abdullah-ayyash/eShopify-Online-Store): Online store web application built with the PERN stack (PostgreSQL, Express, React, Node.js).
 - [Jammming](https://spotify-cc.surge.sh/): React app that searches the Spotify library and saves custom playlists to a Spotify account. Source: https://github.com/abdullah-ayyash/jamming-spotify-api
-- [Responsive Chess Club Website](https://abdullah-ayyash.github.io/responsive-club-website/): Static, responsive HTML and CSS website for a chess club. Source: https://github.com/abdullah-ayyash/responsive-club-website
-- [B-Choice App Business Website](https://abdullah-ayyash.github.io/flexbox-business-site-starting/): Business website for a mobile app that offers alternatives to popular phone apps (HTML, CSS). Source: https://github.com/abdullah-ayyash/flexbox-business-site-starting
-- [Credit Card Checker](https://github.com/abdullah-ayyash/credit-card-checker): JavaScript credit card validator using the Luhn algorithm.
+- [Outreach Simulator](https://abdullahayyash.ca/outreach-simulator/): Browser-based Monte Carlo simulator for modelling a cold outreach funnel (HTML, CSS, JavaScript). Source: https://github.com/abdullah-ayyash/outreach-simulator
+- [Tetris Game](https://abdullahayyash.ca/tetris-game/): Classic Tetris game that runs in the browser (HTML, CSS, JavaScript). Source: https://github.com/abdullah-ayyash/tetris-game
+- [Do I Need an Umbrella?](https://abdullahayyash.ca/do-i-need-an-umbrella/): Small web app that tells you whether to take an umbrella today (HTML, CSS, JavaScript). Source: https://github.com/abdullah-ayyash/do-i-need-an-umbrella
 - [DNA Simulation](https://github.com/abdullah-ayyash/Pila-Aequor-Organism): JavaScript simulation of DNA and mutation speed in a living system.
 
 ## Profiles
